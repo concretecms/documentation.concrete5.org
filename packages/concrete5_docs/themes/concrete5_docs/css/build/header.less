@@ -1,0 +1,116 @@
+@import "../../../../../../concrete/css/build/vendor/bootstrap/variables.less";
+@import "../../../../../../concrete/css/build/vendor/bootstrap/mixins.less";
+@import "../../../../../../concrete/css/build/core/include/variables.less";
+@import "../../../../../../concrete/css/build/core/include/mixins.less";
+
+div.ccm-page {
+
+
+  header {
+    background: #E5F1FA url(../images/header.png) repeat-x;
+
+    nav {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .navbar-brand {
+      padding-right: 0px;
+    }
+
+    a.header-logo {
+
+      padding: 20px 15px 0px 0px;
+      display: block;
+
+    }
+
+    .nav>li>a:hover {
+      background-color: transparent;
+    }
+
+    form {
+      margin-top: 7px;
+
+      input[type=text] {
+        padding-left: 24px;
+      }
+
+      i {
+        color: #999;
+        position: absolute;
+        z-index: 10;
+        top: 17px;
+        left: 7px;
+      }
+    }
+
+    ul.header-nav li a {
+      font-size: 13px;
+      font-weight: bold;
+      color: #049cdb;
+      &:hover {
+        color: #0066b3;
+      }
+    }
+
+    &.navbar {
+      &.documentation-header {
+        margin-bottom: 0px;
+        z-index: 5;
+      }
+    }
+
+    .navbar-toggle {
+      font-size: 24px;
+    }
+  }
+}
+
+
+header #header-notifications {
+  *zoom: 1;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 27px;
+  text-align: right;
+}
+header-notifications:before,
+header #header-notifications:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+header #header-notifications:after {
+  clear: both;
+}
+header #header-notifications a {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 25px;
+}
+header #header-notifications a.cart-button,
+header #header-notifications a.logout {
+  color: #aeb8bc;
+}
+header #header-notifications a.cart-button:hover,
+header #header-notifications a.logout:hover {
+  text-decoration: none;
+  color: #66747a;
+}
+header #header-notifications a.sign-up,
+header #header-notifications a.profile-link {
+  color: #0099cc;
+}
+header #header-notifications a.sign-up:hover,
+header #header-notifications a.profile-link:hover {
+  text-decoration: none;
+  color: #155f78;
+}
+header #header-notifications a.sign-in {
+  color: #00cc66;
+}
+header #header-notifications a.sign-in:hover {
+  text-decoration: none;
+  color: #0fbc66;
+}

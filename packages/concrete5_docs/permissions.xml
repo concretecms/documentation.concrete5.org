@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<concrete5-cif version="1.0">
+
+    <permissionkeys>
+        <permissionkey handle="edit_in_documentation_composer" name="Edit in Documentation Composer" description="" package="concrete5_docs" category="page">
+        </permissionkey>
+
+        <permissionkey handle="add_in_documentation_composer" name="Add From Documentation Composer" description="" package="concrete5_docs" category="page_type">
+        </permissionkey>
+
+        <permissionkey handle="edit_document_author" name="Edit Document Author" description="" package="concrete5_docs" category="admin">
+        </permissionkey>
+
+    </permissionkeys>
+
+</concrete5-cif>

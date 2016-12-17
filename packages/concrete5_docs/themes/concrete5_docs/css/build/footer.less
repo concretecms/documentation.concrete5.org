@@ -1,0 +1,98 @@
+@lighterGreen:  #e6ffd6;
+@lightGreen:    #daf2cb;
+
+footer {
+  margin: 60px 0 0 0;
+
+  .lines {
+    background: url('http://www.concrete5.org/themes/version_4/images/bg_footer_line_pattern.png') top center repeat-x;
+    img {
+      float: right;
+    }
+  }
+  .built-with {
+    background: url('http://www.concrete5.org/themes/version_4/images/bg_footer_blacktop.png') top center repeat #2c2c2c;
+    padding: 10px 0;
+    font-size: 14px;
+    line-height: 45px;
+    letter-spacing: 0.05em;
+    color: #666;
+
+    #built-with-left {
+      a {
+        padding-right: 40px;
+      }
+    }
+    #built-with-right {
+      text-align: right;
+      a {
+        padding-left: 40px;
+      }
+    }
+    span {
+    }
+    a {
+    }
+  }
+
+  .menu {
+    background: url('http://www.concrete5.org/themes/version_4/images/bg_footer_green_shadow.png') top center repeat-x @lighterGreen;
+    padding: 35px;
+
+    p {
+      a {
+        color: #333;
+        &:hover {
+          color: #255;
+        }
+        &:active {
+          color: #112;
+        }
+      }
+      margin: 0;
+    }
+/*
+    .container {
+      #grid > .core(155px, 40px);
+    }*/
+  }
+
+  .social {
+    background-color: @lightGreen;
+    height: 70px;
+    line-height: 70px;
+    padding-top: 5px;
+    text-align: right;
+
+    #built-with-left {
+      color: #666;
+      img {
+        margin-top: -3px;
+        margin-right: 20px;
+      }
+    }
+
+    .social-icons {
+      .fa {
+        &:before {
+          background-color: rgb(154, 170, 144);
+          padding: 3px;
+          color: rgb(218, 242, 203);
+          .border-radius(100px);
+          width: 20px;
+          text-align: center;
+          display: inline-block;
+        }
+      }
+
+      a {
+        width: 30px;
+        display: inline-block;
+
+        &:hover {
+          text-decoration: none !important;
+        }
+      }
+    }
+  }
+}

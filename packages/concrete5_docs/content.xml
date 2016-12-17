@@ -1,0 +1,839 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concrete5-cif version="1.0">
+    <pages>
+        <page name="Editors Guide" path="/editors" filename="" pagetype="editor_document" template="full" user="admin"
+              description="" package="">
+            <area name="Main">
+                <blocks>
+                    <block type="page_title" name="">
+                        <data table="btPageTitle">
+                            <record>
+                                <useCustomTitle><![CDATA[0]]></useCustomTitle>
+                                <titleText><![CDATA[Editors Guide]]></titleText>
+                                <formatting><![CDATA[h1]]></formatting>
+                            </record>
+                        </data>
+                    </block>
+                    <block type="core_area_layout" name="">
+                        <arealayout type="theme-grid" columns="12">
+                            <columns>
+                                <column span="8" offset="0">
+                                    <block type="autonav" name="" custom-template="toc.php">
+                                        <data table="btNavigation">
+                                            <record>
+                                                <orderBy><![CDATA[display_asc]]></orderBy>
+                                                <displayPages><![CDATA[below]]></displayPages>
+                                                <displayPagesCID/>
+                                                <displayPagesIncludeSelf><![CDATA[0]]></displayPagesIncludeSelf>
+                                                <displaySubPages><![CDATA[all]]></displaySubPages>
+                                                <displaySubPageLevels><![CDATA[custom]]></displaySubPageLevels>
+                                                <displaySubPageLevelsNum><![CDATA[1]]></displaySubPageLevelsNum>
+                                                <displayUnavailablePages><![CDATA[0]]></displayUnavailablePages>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <style>
+                                        <backgroundColor>rgb(242, 242, 242)</backgroundColor>
+                                        <backgroundRepeat>no-repeat</backgroundRepeat>
+                                        <borderWidth/>
+                                        <borderColor/>
+                                        <borderStyle/>
+                                        <borderRadius/>
+                                        <baseFontSize/>
+                                        <alignment/>
+                                        <textColor/>
+                                        <linkColor/>
+                                        <paddingTop>15px</paddingTop>
+                                        <paddingBottom>15px</paddingBottom>
+                                        <paddingLeft>15px</paddingLeft>
+                                        <paddingRight>15px</paddingRight>
+                                        <marginTop/>
+                                        <marginBottom/>
+                                        <marginLeft/>
+                                        <marginRight/>
+                                        <rotate/>
+                                        <boxShadowHorizontal/>
+                                        <boxShadowVertical/>
+                                        <boxShadowBlur/>
+                                        <boxShadowSpread/>
+                                        <boxShadowColor/>
+                                        <customClass/>
+                                        <hideOnExtraSmallDevice/>
+                                        <hideOnSmallDevice/>
+                                        <hideOnMediumDevice/>
+                                        <hideOnLargeDevice/>
+                                    </style>
+                                    <block type="page_list" name="">
+                                        <data table="btPageList">
+                                            <record>
+                                                <num><![CDATA[20]]></num>
+                                                <orderBy><![CDATA[chrono_desc]]></orderBy>
+                                                <cParentID>{ccm:export:page:/editors}</cParentID>
+                                                <cThis><![CDATA[1]]></cThis>
+                                                <useButtonForLink><![CDATA[0]]></useButtonForLink>
+                                                <buttonLinkText><![CDATA[]]></buttonLinkText>
+                                                <pageListTitle><![CDATA[Recent Additions]]></pageListTitle>
+                                                <filterByRelated><![CDATA[0]]></filterByRelated>
+                                                <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+                                                <filterDateOption><![CDATA[]]></filterDateOption>
+                                                <filterDateDays><![CDATA[0]]></filterDateDays>
+                                                <filterDateStart><![CDATA[]]></filterDateStart>
+                                                <filterDateEnd><![CDATA[]]></filterDateEnd>
+                                                <relatedTopicAttributeKeyHandle>
+                                                    <![CDATA[]]></relatedTopicAttributeKeyHandle>
+                                                <customTopicAttributeKeyHandle>
+                                                    <![CDATA[]]></customTopicAttributeKeyHandle>
+                                                <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+                                                <includeName><![CDATA[1]]></includeName>
+                                                <includeDescription><![CDATA[1]]></includeDescription>
+                                                <includeDate><![CDATA[1]]></includeDate>
+                                                <includeAllDescendents><![CDATA[1]]></includeAllDescendents>
+                                                <paginate><![CDATA[0]]></paginate>
+                                                <displayAliases><![CDATA[0]]></displayAliases>
+                                                <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+                                                <ptID>{ccm:export:pagetype:editor_document}</ptID>
+                                                <pfID/>
+                                                <truncateSummaries><![CDATA[0]]></truncateSummaries>
+                                                <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+                                                <noResultsMessage><![CDATA[]]></noResultsMessage>
+                                                <displayThumbnail><![CDATA[0]]></displayThumbnail>
+                                                <truncateChars><![CDATA[0]]></truncateChars>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                            </columns>
+                        </arealayout>
+                    </block>
+                </blocks>
+            </area>
+            <area name="Page Footer">
+                <blocks/>
+            </area>
+        </page>
+        <page name="Developers Guide" path="/developers" filename="" pagetype="page" template="full" user="admin"
+              description="" package="">
+            <attributes>
+                <attributekey handle="meta_title">
+                    <value><![CDATA[]]></value>
+                </attributekey>
+                <attributekey handle="meta_description">
+                    <value><![CDATA[]]></value>
+                </attributekey>
+                <attributekey handle="meta_keywords">
+                    <value><![CDATA[]]></value>
+                </attributekey>
+                <attributekey handle="header_extra_content">
+                    <value><![CDATA[]]></value>
+                </attributekey>
+                <attributekey handle="exclude_sitemapxml">
+                    <value><![CDATA[0]]></value>
+                </attributekey>
+            </attributes>
+            <area name="Main">
+                <blocks>
+                    <block type="page_title" name="">
+                        <data table="btPageTitle">
+                            <record>
+                                <useCustomTitle><![CDATA[0]]></useCustomTitle>
+                                <titleText><![CDATA[Developers Guide]]></titleText>
+                                <formatting><![CDATA[h1]]></formatting>
+                            </record>
+                        </data>
+                    </block>
+                    <block type="core_area_layout" name="">
+                        <arealayout type="theme-grid" columns="12">
+                            <columns>
+                                <column span="8" offset="0">
+                                    <block type="autonav" name="" custom-template="toc.php">
+                                        <data table="btNavigation">
+                                            <record>
+                                                <orderBy><![CDATA[display_asc]]></orderBy>
+                                                <displayPages><![CDATA[below]]></displayPages>
+                                                <displayPagesCID/>
+                                                <displayPagesIncludeSelf><![CDATA[0]]></displayPagesIncludeSelf>
+                                                <displaySubPages><![CDATA[all]]></displaySubPages>
+                                                <displaySubPageLevels><![CDATA[custom]]></displaySubPageLevels>
+                                                <displaySubPageLevelsNum><![CDATA[1]]></displaySubPageLevelsNum>
+                                                <displayUnavailablePages><![CDATA[0]]></displayUnavailablePages>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="4" offset="0">
+                                    <style>
+                                        <backgroundColor>rgb(242, 242, 242)</backgroundColor>
+                                        <backgroundRepeat>no-repeat</backgroundRepeat>
+                                        <borderWidth/>
+                                        <borderColor/>
+                                        <borderStyle/>
+                                        <borderRadius/>
+                                        <baseFontSize/>
+                                        <alignment/>
+                                        <textColor/>
+                                        <linkColor/>
+                                        <paddingTop>15px</paddingTop>
+                                        <paddingBottom>15px</paddingBottom>
+                                        <paddingLeft>15px</paddingLeft>
+                                        <paddingRight>15px</paddingRight>
+                                        <marginTop/>
+                                        <marginBottom/>
+                                        <marginLeft/>
+                                        <marginRight/>
+                                        <rotate/>
+                                        <boxShadowHorizontal/>
+                                        <boxShadowVertical/>
+                                        <boxShadowBlur/>
+                                        <boxShadowSpread/>
+                                        <boxShadowColor/>
+                                        <customClass/>
+                                        <hideOnExtraSmallDevice/>
+                                        <hideOnSmallDevice/>
+                                        <hideOnMediumDevice/>
+                                        <hideOnLargeDevice/>
+                                    </style>
+                                    <block type="page_list" name="">
+                                        <data table="btPageList">
+                                            <record>
+                                                <num><![CDATA[20]]></num>
+                                                <orderBy><![CDATA[chrono_desc]]></orderBy>
+                                                <cParentID>{ccm:export:page:/developers}</cParentID>
+                                                <cThis><![CDATA[1]]></cThis>
+                                                <useButtonForLink><![CDATA[0]]></useButtonForLink>
+                                                <buttonLinkText><![CDATA[]]></buttonLinkText>
+                                                <pageListTitle><![CDATA[Recent Additions]]></pageListTitle>
+                                                <filterByRelated><![CDATA[0]]></filterByRelated>
+                                                <filterByCustomTopic><![CDATA[0]]></filterByCustomTopic>
+                                                <filterDateOption><![CDATA[]]></filterDateOption>
+                                                <filterDateDays><![CDATA[0]]></filterDateDays>
+                                                <filterDateStart><![CDATA[]]></filterDateStart>
+                                                <filterDateEnd><![CDATA[]]></filterDateEnd>
+                                                <relatedTopicAttributeKeyHandle>
+                                                    <![CDATA[]]></relatedTopicAttributeKeyHandle>
+                                                <customTopicAttributeKeyHandle>
+                                                    <![CDATA[]]></customTopicAttributeKeyHandle>
+                                                <customTopicTreeNodeID><![CDATA[0]]></customTopicTreeNodeID>
+                                                <includeName><![CDATA[1]]></includeName>
+                                                <includeDescription><![CDATA[1]]></includeDescription>
+                                                <includeDate><![CDATA[1]]></includeDate>
+                                                <includeAllDescendents><![CDATA[1]]></includeAllDescendents>
+                                                <paginate><![CDATA[0]]></paginate>
+                                                <displayAliases><![CDATA[0]]></displayAliases>
+                                                <enableExternalFiltering><![CDATA[0]]></enableExternalFiltering>
+                                                <ptID>{ccm:export:pagetype:developer_document}</ptID>
+                                                <pfID/>
+                                                <truncateSummaries><![CDATA[0]]></truncateSummaries>
+                                                <displayFeaturedOnly><![CDATA[0]]></displayFeaturedOnly>
+                                                <noResultsMessage><![CDATA[]]></noResultsMessage>
+                                                <displayThumbnail><![CDATA[0]]></displayThumbnail>
+                                                <truncateChars><![CDATA[0]]></truncateChars>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                            </columns>
+                        </arealayout>
+                    </block>
+                </blocks>
+            </area>
+            <area name="Page Footer">
+                <blocks/>
+            </area>
+        </page>
+        <page name="Tutorials: Learn how to perform common concrete5 Tasks" path="/tutorials" filename=""
+              pagetype="page" template="full" user="admin" description="" package="">
+            <attributes>
+                <attributekey handle="exclude_nav">
+                    <value><![CDATA[1]]></value>
+                </attributekey>
+                <attributekey handle="exclude_search_index">
+                    <value><![CDATA[1]]></value>
+                </attributekey>
+            </attributes>
+            <area name="Main">
+                <blocks>
+                    <block type="core_area_layout" name="" custom-template="content_stripe">
+                        <style>
+                            <backgroundColor/>
+                            <backgroundImage>{ccm:export:file:Community_Image_01_01.jpg}</backgroundImage>
+                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                            <borderWidth/>
+                            <borderColor/>
+                            <borderStyle/>
+                            <borderRadius/>
+                            <baseFontSize/>
+                            <alignment/>
+                            <textColor/>
+                            <linkColor/>
+                            <paddingTop/>
+                            <paddingBottom/>
+                            <paddingLeft/>
+                            <paddingRight/>
+                            <marginTop/>
+                            <marginBottom/>
+                            <marginLeft/>
+                            <marginRight/>
+                            <rotate/>
+                            <boxShadowHorizontal/>
+                            <boxShadowVertical/>
+                            <boxShadowBlur/>
+                            <boxShadowSpread/>
+                            <boxShadowColor/>
+                            <customClass/>
+                            <hideOnExtraSmallDevice/>
+                            <hideOnSmallDevice/>
+                            <hideOnMediumDevice/>
+                            <hideOnLargeDevice/>
+                        </style>
+                        <arealayout type="theme-grid" columns="12">
+                            <columns>
+                                <column span="12" offset="0">
+                                    <block type="tutorial_search" name=""/>
+                                </column>
+                            </columns>
+                        </arealayout>
+                    </block>
+                </blocks>
+            </area>
+            <area name="Page Footer">
+                <blocks>
+                    <block type="tutorial_list" name=""/>
+                </blocks>
+            </area>
+        </page>
+        <page name="Home" path="" filename="" pagetype="" template="full" user="admin" description="" package="">
+            <attributes>
+                <attributekey handle="tags"/>
+            </attributes>
+            <area name="Main">
+                <blocks>
+                    <block type="core_area_layout" name="" custom-template="content_stripe">
+                        <style>
+                            <backgroundColor/>
+                            <backgroundImage>{ccm:export:file:docheader.jpg}</backgroundImage>
+                            <backgroundRepeat>no-repeat</backgroundRepeat>
+                            <borderWidth/>
+                            <borderColor/>
+                            <borderStyle/>
+                            <borderRadius/>
+                            <baseFontSize/>
+                            <alignment/>
+                            <textColor/>
+                            <linkColor/>
+                            <paddingTop/>
+                            <paddingBottom/>
+                            <paddingLeft/>
+                            <paddingRight/>
+                            <marginTop/>
+                            <marginBottom/>
+                            <marginLeft/>
+                            <marginRight/>
+                            <rotate/>
+                            <boxShadowHorizontal/>
+                            <boxShadowVertical/>
+                            <boxShadowBlur/>
+                            <boxShadowSpread/>
+                            <boxShadowColor/>
+                            <customClass/>
+                            <hideOnExtraSmallDevice/>
+                            <hideOnSmallDevice/>
+                            <hideOnMediumDevice/>
+                            <hideOnLargeDevice/>
+                        </style>
+                        <arealayout type="theme-grid" columns="12">
+                            <columns>
+                                <column span="6" offset="0">
+                                    <block type="content" name="">
+                                        <data table="btContentLocal">
+                                            <record>
+                                                <content>
+                                                    <![CDATA[<h1>Documentation</h1><p>Learn how to use, design for and extend concrete5.<span></span></p>]]></content>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="6" offset="0"/>
+                            </columns>
+                        </arealayout>
+                    </block>
+                    <block type="core_area_layout" name="">
+                        <arealayout type="theme-grid" columns="12">
+                            <columns>
+                                <column span="6" offset="0">
+                                    <block type="content" name="" custom-template="prominent">
+                                        <data table="btContentLocal">
+                                            <record>
+                                                <content>
+                                                    <![CDATA[<h1 class="header-variant-blue">Editors Guide</h1>  <p>Learn how to use concrete5's editing tools and Dashboard. If you're a webmaster for a concrete5 site, this is where you can learn how editing works, how to add pages and content, how to control SEO and page attributes, manage files, create users, administer a site and more.<br><br>  </p>  <p><a class="btn btn-primary" href="{ccm:export:page:/editors}">Editors Guide</a>  </p>]]></content>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                                <column span="6" offset="0">
+                                    <block type="content" name="" custom-template="prominent">
+                                        <data table="btContentLocal">
+                                            <record>
+                                                <content>
+                                                    <![CDATA[<h1 class="header-variant-purple">Developer Documentation</h1>  <p>Learn how to extend concrete5. If you're a theme or add-on developer, or someone creating a custom website or application solution with concrete5, this is where you need to be.  </p>  <p><br><a class="btn btn-primary" href="{ccm:export:page:/developers}">Developer Documentation</a><br>  </p>]]></content>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </column>
+                            </columns>
+                        </arealayout>
+                    </block>
+                </blocks>
+            </area>
+            <area name="Page Footer">
+                <blocks/>
+            </area>
+        </page>
+    </pages>
+    <themes>
+        <theme handle="concrete5_docs" package="concrete5_docs" activated="1"/>
+    </themes>
+    <singlepages>
+        <page name="My Contributions" path="/contributions" filename="/contributions/view.php" pagetype="" user="admin"
+              description="" package="concrete5_docs">
+            <attributes>
+                <attributekey handle="exclude_nav">
+                    <value><![CDATA[1]]></value>
+                </attributekey>
+                <attributekey handle="exclude_search_index">
+                    <value><![CDATA[1]]></value>
+                </attributekey>
+            </attributes>
+        </page>
+        <page name="Contribute Documentation" path="/contribute" filename="/contribute/view.php" pagetype=""
+              user="admin" description="" package="concrete5_docs">
+            <attributes>
+                <attributekey handle="exclude_nav">
+                    <value><![CDATA[1]]></value>
+                </attributekey>
+                <attributekey handle="exclude_search_index">
+                    <value><![CDATA[1]]></value>
+                </attributekey>
+            </attributes>
+        </page>
+    </singlepages>
+    <pagetypes>
+        <pagetype name="Tutorial" handle="tutorial" package="" launch-in-composer="1" is-frequently-added="1">
+            <pagetemplates type="custom" default="tutorial">
+                <pagetemplate handle="tutorial"/>
+            </pagetemplates>
+            <target handle="parent_page" package="" path="/tutorials"/>
+            <composer>
+                <formlayout>
+                    <set name="" description="">
+                        <control custom-template="" required="1" custom-label="Tutorial Name" description=""
+                                 type="core_page_property" handle="name"/>
+                        <control custom-template="" required="1" custom-label="" description=""
+                                 type="core_page_property" handle="description"/>
+                        <control custom-template="" required="1" custom-label="" description=""
+                                 type="collection_attribute" handle="audience"/>
+                        <control custom-template="" custom-label="" description="" type="collection_attribute"
+                                 handle="tags"/>
+                        <control custom-template="" custom-label="Questions Answered by This Tutorial" description=""
+                                 type="collection_attribute" handle="questions_answered"/>
+                        <control custom-template="" custom-label="Content" description="" output-control-id="UslWY3aP"
+                                 type="block" handle="markdown"/>
+                    </set>
+                </formlayout>
+                <output>
+                    <pagetemplate handle="tutorial">
+                        <page name="" path="" filename="" pagetype="tutorial" template="tutorial" user="admin"
+                              description="" package="">
+                            <area name="Main">
+                                <blocks>
+                                    <block type="core_page_type_composer_control_output" name="" mc-block-id="nDoANreJ">
+                                        <control output-control-id="UslWY3aP"/>
+                                    </block>
+                                </blocks>
+                            </area>
+                            <area name="Page Footer">
+                                <blocks/>
+                            </area>
+                            <area name="Page Header">
+                                <blocks>
+                                    <block type="likes_this" name="" custom-template="likes_this_byline_conversation"
+                                           mc-block-id="eQNKQaSw">
+                                        <data table="btLikesThis">
+                                            <record/>
+                                        </data>
+                                    </block>
+                                </blocks>
+                            </area>
+                            <area name="Sidebar">
+                                <blocks/>
+                            </area>
+                            <area name="Conversation">
+                                <blocks>
+                                    <block type="core_conversation" name="" mc-block-id="DJlMCpIX">
+                                        <data table="btCoreConversation">
+                                            <record>
+                                                <cnvID><![CDATA[68]]></cnvID>
+                                                <enablePosting><![CDATA[1]]></enablePosting>
+                                                <paginate><![CDATA[1]]></paginate>
+                                                <itemsPerPage><![CDATA[50]]></itemsPerPage>
+                                                <displayMode><![CDATA[threaded]]></displayMode>
+                                                <orderBy><![CDATA[date_asc]]></orderBy>
+                                                <enableOrdering><![CDATA[1]]></enableOrdering>
+                                                <enableCommentRating><![CDATA[1]]></enableCommentRating>
+                                                <displayPostingForm><![CDATA[bottom]]></displayPostingForm>
+                                                <addMessageLabel><![CDATA[Add Message]]></addMessageLabel>
+                                                <dateFormat><![CDATA[default]]></dateFormat>
+                                                <customDateFormat><![CDATA[]]></customDateFormat>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </blocks>
+                            </area>
+                        </page>
+                    </pagetemplate>
+                </output>
+            </composer>
+        </pagetype>
+        <pagetype name="Developer Document" handle="developer_document" package="" launch-in-composer="1"
+                  is-frequently-added="1">
+            <pagetemplates type="custom" default="document">
+                <pagetemplate handle="document"/>
+            </pagetemplates>
+            <target handle="page_type" package="" path="/developers" pagetype="section" form-factor="sitemap_in_page"/>
+            <composer>
+                <formlayout>
+                    <set name="" description="">
+                        <control custom-template="" required="1" custom-label="" description=""
+                                 type="core_page_property" handle="name"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="description"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="url_slug"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="publish_target"/>
+                        <control custom-template="" custom-label="" description="" type="collection_attribute"
+                                 handle="tags"/>
+                        <control custom-template="" custom-label="Content" description="" output-control-id="cQFHDiK7"
+                                 type="block" handle="markdown"/>
+                    </set>
+                </formlayout>
+                <output>
+                    <pagetemplate handle="document">
+                        <page name="" path="" filename="" pagetype="developer_document" template="document" user="admin"
+                              description="" package="">
+                            <area name="Main">
+                                <blocks>
+                                    <block type="core_page_type_composer_control_output" name="" mc-block-id="6XP4g7JN">
+                                        <control output-control-id="cQFHDiK7"/>
+                                    </block>
+                                </blocks>
+                            </area>
+                            <area name="Page Footer">
+                                <blocks/>
+                            </area>
+                            <area name="Page Header">
+                                <blocks>
+                                    <block type="page_title" name="" mc-block-id="VF4s8AGW">
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[0]]></useCustomTitle>
+                                                <titleText><![CDATA[[Page Title]]]></titleText>
+                                                <formatting><![CDATA[h1]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </blocks>
+                            </area>
+                            <area name="Sidebar">
+                                <blocks>
+                                    <block type="autonav" name="" custom-template="sidebar.php" mc-block-id="09UjCmNm">
+                                        <data table="btNavigation">
+                                            <record>
+                                                <orderBy><![CDATA[display_asc]]></orderBy>
+                                                <displayPages><![CDATA[second_level]]></displayPages>
+                                                <displayPagesCID/>
+                                                <displayPagesIncludeSelf><![CDATA[0]]></displayPagesIncludeSelf>
+                                                <displaySubPages><![CDATA[relevant]]></displaySubPages>
+                                                <displaySubPageLevels><![CDATA[all]]></displaySubPageLevels>
+                                                <displaySubPageLevelsNum><![CDATA[0]]></displaySubPageLevelsNum>
+                                                <displayUnavailablePages><![CDATA[0]]></displayUnavailablePages>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </blocks>
+                            </area>
+                            <area name="Conversation">
+                                <blocks>
+                                    <block type="next_previous" name="" custom-template="arrows.php"
+                                           mc-block-id="jpQzW9Fs">
+                                        <data table="btNextPrevious">
+                                            <record>
+                                                <nextLabel><![CDATA[Next]]></nextLabel>
+                                                <previousLabel><![CDATA[Previous]]></previousLabel>
+                                                <parentLabel><![CDATA[]]></parentLabel>
+                                                <loopSequence><![CDATA[0]]></loopSequence>
+                                                <excludeSystemPages><![CDATA[1]]></excludeSystemPages>
+                                                <orderBy><![CDATA[display_asc]]></orderBy>
+                                            </record>
+                                        </data>
+                                    </block>
+                                    <block type="core_conversation" name="" mc-block-id="0tM2Oze0">
+                                        <data table="btCoreConversation">
+                                            <record>
+                                                <cnvID><![CDATA[1]]></cnvID>
+                                                <enablePosting><![CDATA[1]]></enablePosting>
+                                                <paginate><![CDATA[1]]></paginate>
+                                                <itemsPerPage><![CDATA[50]]></itemsPerPage>
+                                                <displayMode><![CDATA[threaded]]></displayMode>
+                                                <orderBy><![CDATA[date_asc]]></orderBy>
+                                                <enableOrdering><![CDATA[1]]></enableOrdering>
+                                                <enableCommentRating><![CDATA[1]]></enableCommentRating>
+                                                <displayPostingForm><![CDATA[bottom]]></displayPostingForm>
+                                                <addMessageLabel><![CDATA[Add Message]]></addMessageLabel>
+                                                <dateFormat><![CDATA[default]]></dateFormat>
+                                                <customDateFormat><![CDATA[]]></customDateFormat>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </blocks>
+                            </area>
+                        </page>
+                    </pagetemplate>
+                </output>
+            </composer>
+        </pagetype>
+        <pagetype name="Editor Document" handle="editor_document" package="" launch-in-composer="1"
+                  is-frequently-added="1">
+            <pagetemplates type="custom" default="editor_document">
+                <pagetemplate handle="editor_document"/>
+            </pagetemplates>
+            <target handle="page_type" package="" path="/editors" pagetype="editor_document" form-factor="sitemap_in_page"/>
+            <composer>
+                <formlayout>
+                    <set name="" description="">
+                        <control custom-template="" required="1" custom-label="" description=""
+                                 type="core_page_property" handle="name"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="description"/>
+                        <control custom-template="" custom-label="" description="" type="collection_attribute"
+                                 handle="tags"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="publish_target"/>
+                        <control custom-template="" custom-label="Body" description="" output-control-id="N3cL3v7G"
+                                 type="block" handle="content"/>
+                    </set>
+                </formlayout>
+                <output>
+                    <pagetemplate handle="editor_document">
+                        <page name="" path="" filename="" pagetype="editor_document" template="editor_document"
+                              user="admin" description="" package="">
+                            <area name="Page Header">
+                                <blocks>
+                                    <block type="page_title" name="" mc-block-id="W5ZwMb7U">
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[0]]></useCustomTitle>
+                                                <titleText><![CDATA[[Page Title]]]></titleText>
+                                                <formatting><![CDATA[h1]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </blocks>
+                            </area>
+                            <area name="Main">
+                                <blocks>
+                                    <block type="core_page_type_composer_control_output" name="" mc-block-id="eoF6u8Xu">
+                                        <control output-control-id="N3cL3v7G"/>
+                                    </block>
+                                </blocks>
+                            </area>
+                            <area name="Conversation">
+                                <blocks>
+                                    <block type="core_conversation" name="" mc-block-id="JVmSaxAf">
+                                        <data table="btCoreConversation">
+                                            <record>
+                                                <cnvID><![CDATA[8904]]></cnvID>
+                                                <enablePosting><![CDATA[1]]></enablePosting>
+                                                <paginate><![CDATA[1]]></paginate>
+                                                <itemsPerPage><![CDATA[50]]></itemsPerPage>
+                                                <displayMode><![CDATA[threaded]]></displayMode>
+                                                <orderBy><![CDATA[date_asc]]></orderBy>
+                                                <enableOrdering><![CDATA[1]]></enableOrdering>
+                                                <enableCommentRating><![CDATA[1]]></enableCommentRating>
+                                                <displayPostingForm><![CDATA[bottom]]></displayPostingForm>
+                                                <addMessageLabel><![CDATA[Add Message]]></addMessageLabel>
+                                                <dateFormat><![CDATA[default]]></dateFormat>
+                                                <customDateFormat><![CDATA[]]></customDateFormat>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </blocks>
+                            </area>
+                            <area name="Sidebar">
+                                <blocks>
+                                    <block type="autonav" name="" custom-template="sidebar.php" mc-block-id="JlRElFCL">
+                                        <data table="btNavigation">
+                                            <record>
+                                                <orderBy><![CDATA[display_asc]]></orderBy>
+                                                <displayPages><![CDATA[second_level]]></displayPages>
+                                                <displayPagesCID/>
+                                                <displayPagesIncludeSelf><![CDATA[0]]></displayPagesIncludeSelf>
+                                                <displaySubPages><![CDATA[relevant]]></displaySubPages>
+                                                <displaySubPageLevels><![CDATA[enough_plus1]]></displaySubPageLevels>
+                                                <displaySubPageLevelsNum><![CDATA[0]]></displaySubPageLevelsNum>
+                                                <displayUnavailablePages><![CDATA[0]]></displayUnavailablePages>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </blocks>
+                            </area>
+                            <area name="Page Footer">
+                                <blocks/>
+                            </area>
+                        </page>
+                    </pagetemplate>
+                </output>
+            </composer>
+        </pagetype>
+        <pagetype name="Section" handle="section" package="" launch-in-composer="1" is-frequently-added="1">
+            <pagetemplates type="all" default="full"/>
+            <target handle="all" package=""/>
+            <composer>
+                <formlayout>
+                    <set name="Basics" description="">
+                        <control custom-template="" required="1" custom-label="Page Name" description=""
+                                 type="core_page_property" handle="name"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="description"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="url_slug"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="publish_target"/>
+                    </set>
+                </formlayout>
+                <output>
+                    <pagetemplate handle="document">
+                        <page name="" path="" filename="" pagetype="section" template="document" user="admin"
+                              description="" package="">
+                            <area name="Page Header">
+                                <blocks>
+                                    <block type="page_title" name="" mc-block-id="9TgwxGYC">
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[0]]></useCustomTitle>
+                                                <titleText><![CDATA[[Page Title]]]></titleText>
+                                                <formatting><![CDATA[h1]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </blocks>
+                            </area>
+                            <area name="Sidebar">
+                                <blocks>
+                                    <block type="autonav" name="" mc-block-id="iofYnACB">
+                                        <data table="btNavigation">
+                                            <record>
+                                                <orderBy><![CDATA[display_asc]]></orderBy>
+                                                <displayPages><![CDATA[second_level]]></displayPages>
+                                                <displayPagesCID/>
+                                                <displayPagesIncludeSelf><![CDATA[0]]></displayPagesIncludeSelf>
+                                                <displaySubPages><![CDATA[relevant]]></displaySubPages>
+                                                <displaySubPageLevels><![CDATA[all]]></displaySubPageLevels>
+                                                <displaySubPageLevelsNum><![CDATA[0]]></displaySubPageLevelsNum>
+                                                <displayUnavailablePages><![CDATA[0]]></displayUnavailablePages>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </blocks>
+                            </area>
+                            <area name="Main">
+                                <blocks>
+                                    <block type="autonav" name="" custom-template="toc.php" mc-block-id="pG1FOSPA">
+                                        <data table="btNavigation">
+                                            <record>
+                                                <orderBy><![CDATA[display_asc]]></orderBy>
+                                                <displayPages><![CDATA[current]]></displayPages>
+                                                <displayPagesCID/>
+                                                <displayPagesIncludeSelf><![CDATA[0]]></displayPagesIncludeSelf>
+                                                <displaySubPages><![CDATA[all]]></displaySubPages>
+                                                <displaySubPageLevels><![CDATA[custom]]></displaySubPageLevels>
+                                                <displaySubPageLevelsNum><![CDATA[2]]></displaySubPageLevelsNum>
+                                                <displayUnavailablePages><![CDATA[0]]></displayUnavailablePages>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </blocks>
+                            </area>
+                            <area name="Page Footer">
+                                <blocks/>
+                            </area>
+                        </page>
+                    </pagetemplate>
+                    <pagetemplate handle="editor_document">
+                        <page name="" path="" filename="" pagetype="section" template="editor_document" user="admin"
+                              description="" package=""/>
+                    </pagetemplate>
+                    <pagetemplate handle="full">
+                        <page name="" path="/153" filename="" pagetype="section" template="full" user="admin"
+                              description="" package="">
+                            <area name="Main">
+                                <blocks>
+                                    <block type="page_title" name="" mc-block-id="zxDezjvk">
+                                        <data table="btPageTitle">
+                                            <record>
+                                                <useCustomTitle><![CDATA[0]]></useCustomTitle>
+                                                <titleText><![CDATA[[Page Title]]]></titleText>
+                                                <formatting><![CDATA[h1]]></formatting>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </blocks>
+                            </area>
+                            <area name="Page Footer">
+                                <blocks>
+                                    <block type="autonav" name="" custom-template="toc.php" mc-block-id="J56QKcAc">
+                                        <data table="btNavigation">
+                                            <record>
+                                                <orderBy><![CDATA[display_asc]]></orderBy>
+                                                <displayPages><![CDATA[below]]></displayPages>
+                                                <displayPagesCID/>
+                                                <displayPagesIncludeSelf><![CDATA[0]]></displayPagesIncludeSelf>
+                                                <displaySubPages><![CDATA[all]]></displaySubPages>
+                                                <displaySubPageLevels><![CDATA[custom]]></displaySubPageLevels>
+                                                <displaySubPageLevelsNum><![CDATA[2]]></displaySubPageLevelsNum>
+                                                <displayUnavailablePages><![CDATA[0]]></displayUnavailablePages>
+                                            </record>
+                                        </data>
+                                    </block>
+                                </blocks>
+                            </area>
+                        </page>
+                    </pagetemplate>
+                    <pagetemplate handle="right_sidebar">
+                        <page name="" path="" filename="" pagetype="section" template="right_sidebar" user="admin"
+                              description="" package=""/>
+                    </pagetemplate>
+                    <pagetemplate handle="tutorial">
+                        <page name="" path="" filename="" pagetype="section" template="tutorial" user="admin"
+                              description="" package="">
+                            <area name="Page Header">
+                                <blocks/>
+                            </area>
+                            <area name="Main">
+                                <blocks/>
+                            </area>
+                            <area name="Sidebar">
+                                <blocks/>
+                            </area>
+                            <area name="Page Footer">
+                                <blocks/>
+                            </area>
+                        </page>
+                    </pagetemplate>
+                </output>
+            </composer>
+        </pagetype>
+    </pagetypes>
+
+</concrete5-cif>

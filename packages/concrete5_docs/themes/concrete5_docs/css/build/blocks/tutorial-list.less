@@ -1,0 +1,98 @@
+div.ccm-block-tutorial-list {
+
+  .navbar {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    .border-radius(0px);
+    border-left: 0px;
+    background-color: transparent;
+
+    .navbar-brand {
+      padding-left: 0px;
+    }
+
+    button {
+      margin-top: 6px;
+      margin-left: 15px;
+    }
+  }
+
+
+}
+
+article.tutorial-list-item {
+  font-weight: 300;
+  position: relative;
+  clear:both;
+  padding: 15px 0px 15px 0px;
+  margin-bottom: 0px;
+  border-bottom: 1px solid #f0f0f0;
+
+  div.tutorial-list-item-name {
+    a {
+      color: #111;
+      font-size: 16px;
+    }
+
+    a:hover {
+      color: @link-color;
+      text-decoration: none;
+    }
+  }
+
+  span.tutorial-list-item-byline {
+    display: block;
+    color: @text-muted;
+
+    a {
+      color: @text-muted;
+    }
+  }
+
+  div.tutorial-metadata {
+    float: right;
+    margin-left: 10px;
+    margin-top: 12px;
+    ul {
+      li {
+        margin-left: 5px;
+        display: inline-block;
+      }
+      list-style-type: none;
+      color: @text-muted;
+    }
+  }
+
+  div.tutorial-time {
+    float: right;
+    margin-top: 12px;
+    color: @text-muted;
+  }
+}
+
+section.sidebar-item {
+
+  div.panel-body {
+    article.tutorial-list-item {
+      padding-top: 0px;
+      margin-bottom: 15px;
+
+      &:last-child {
+        border-bottom: 0px;
+        margin-bottom: 0px;
+      }
+
+      div.tutorial-time {
+        float: none;
+        margin-top: 5px;
+      }
+
+      div.tutorial-metadata {
+        margin-top: 5px;
+      }
+
+    }
+  }
+}

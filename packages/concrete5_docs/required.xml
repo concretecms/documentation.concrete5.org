@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concrete5-cif version="1.0">
+    <jobs>
+        <job handle="refresh_page_relations" package="concrete5_docs"/>
+    </jobs>
+    <attributekeys>
+        <attributekey handle="audience" name="Audience" package="" searchable="1" indexed="1" type="select"
+                      category="collection">
+            <type allow-multiple-values="1" display-order="display_asc" allow-other-values="0">
+                <options>
+                    <option value="Editors" is-end-user-added="0"/>
+                    <option value="Designers" is-end-user-added="0"/>
+                    <option value="Developers" is-end-user-added="0"/>
+                </options>
+            </type>
+        </attributekey>
+        <attributekey handle="likes_this_page_count" name="Likes this Page Count" package="likes_this_block"
+                      searchable="1" indexed="1" type="number" category="collection"/>
+        <attributekey handle="questions_answered" name="Questions Answered by this Document" package="" searchable="1"
+                      indexed="1" type="select" category="collection">
+            <type allow-multiple-values="1" display-order="popularity_desc" allow-other-values="1">
+                <options>
+                    <option value="What is concrete5?" is-end-user-added="1"/>
+                    <option value="What is a block?" is-end-user-added="1"/>
+                    <option value="What is a page in concrete5?" is-end-user-added="1"/>
+                    <option value="What is an area?" is-end-user-added="1"/>
+                    <option value="What code standards does concrete5 support?" is-end-user-added="1"/>
+                    <option value="How can I write an add-on for concrete5?" is-end-user-added="1"/>
+                    <option value="What are the changes to the package format in concrete5.7?" is-end-user-added="1"/>
+                    <option value="How can I chop a theme for concrete5?" is-end-user-added="1"/>
+                </options>
+            </type>
+        </attributekey>
+    </attributekeys>
+    <blocktypes>
+        <blocktype handle="markdown" package="markdown"/>
+        <blocktype handle="tutorial_search" package="concrete5_docs"/>
+        <blocktype handle="tutorial_list" package="concrete5_docs"/>
+        <blocktype handle="likes_this" package="likes_this_block"/>
+    </blocktypes>
+    <pagetemplates>
+        <pagetemplate icon="right_sidebar.png" name="Document" handle="document" package="" internal=""/>
+        <pagetemplate icon="right_sidebar.png" name="Editor Document" handle="editor_document" package="" internal=""/>
+        <pagetemplate icon="right_sidebar.png" name="Right Sidebar" handle="right_sidebar" package="" internal=""/>
+        <pagetemplate icon="blank.png" name="Tutorial" handle="tutorial" package="" internal=""/>
+    </pagetemplates>
+    <themes>
+        <theme handle="concrete5_docs" package="concrete5_docs" />
+    </themes>
+</concrete5-cif>

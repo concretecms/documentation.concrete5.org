@@ -1,0 +1,23 @@
+div.ccm-block-likes-this-wrapper {
+
+    position: relative;
+    padding: 0px 0px 0px 23px;
+
+}
+
+div.ccm-block-likes-this-wrapper i {
+
+    position: absolute;
+    top: 4px;
+    left: 0px;
+
+}
+
+div#ccm-block-likes-this-dialog {
+    position: relative;
+    padding: 20px;
+    width: 480px;
+    background-color: #fff;
+    color: #333;
+    margin: 0px auto 0px auto;
+}

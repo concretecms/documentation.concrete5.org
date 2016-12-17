@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btLikesThis">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+	</table>
+	<table name="btLikesThisUserPages">
+	    <field name="cID" type="I" size="11">
+	      <DEFAULT value="0"/>
+	    </field>
+	    <field name="uID" type="I" size="11">
+	      <DEFAULT value="0"/>
+	    </field>
+	    <field name="ctID" type="I">
+				<default value="0"/>
+				<unsigned />
+		</field>
+	    <field name="lastTimeMarked" type="T">
+	      <DEFTIMESTAMP/>
+	    </field>
+	    <index name="uIDcID">
+	      <UNIQUE/>
+	      <col>uID</col>
+	      <col>cID</col>
+	    </index>
+	  </table> 
+</schema>
