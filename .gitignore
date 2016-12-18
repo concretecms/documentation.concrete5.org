@@ -1,0 +1,58 @@
+# ignore system files
+.DS_Store
+.idea
+thumbs.db
+__MACOSX
+._*
+.*swp
+.*swo
+
+# ignore composer files
+composer.phar
+
+# ignore the config
+/application/config/*
+
+# ignore everything but the index.html
+/application/files/*
+!/application/files/index.html
+
+/concrete
+
+# ignore updates folder
+/updates/*
+
+# ignore sitemap.xml
+/sitemap.xml
+
+# ignore the error log and .htaccess and others
+error_log
+.htaccess
+.ftpquota
+/.idea/
+
+# ignore Aptana and Eclipse project files
+.project
+
+# ignore Eclipse-specific files
+/.externalToolBuilders/
+/.settings/
+/.buildpath
+
+# ignore JavaScript source maps
+/concrete/js/*.js.map
+/concrete/js/bootstrap/*.js.map
+
+LICENSE.TXT
+robots.txt
+
+# ignore node modules used for building
+/build/node_modules
+/build/release
+/build/Gruntfile.parameters.js
+/build/npm-debug.log
+
+# ignore PHP symbol map
+__IDE_SYMBOLS__.php
+.phpstorm.meta.php
+
