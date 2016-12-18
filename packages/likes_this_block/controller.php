@@ -1,4 +1,4 @@
-ls <?php
+<?php
 namespace Concrete\Package\LikesThisBlock;
 
 use Concrete\Core\Attribute\Type;
