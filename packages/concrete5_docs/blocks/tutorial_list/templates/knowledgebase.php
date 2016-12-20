@@ -20,9 +20,9 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
-                <li <? if ($sort == 'newest') { ?>class="active"<? } ?>><a href="<?=$controller->getSearchURL($view, 'sort', 'newest')?>">Newest</a></li>
-                <li <? if ($sort == 'popular') { ?>class="active"<? } ?>><a href="<?=$controller->getSearchURL($view, 'sort', 'popular')?>">Popular</a></li>
-                <li <? if ($sort == 'trending') { ?>class="active"<? } ?>><a href="<?=$controller->getSearchURL($view, 'sort', 'trending')?>">Trending</a></li>
+                <li <?php if ($sort == 'newest') { ?>class="active"<?php } ?>><a href="<?=$controller->getSearchURL($view, 'sort', 'newest')?>">Newest</a></li>
+                <li <?php if ($sort == 'popular') { ?>class="active"<?php } ?>><a href="<?=$controller->getSearchURL($view, 'sort', 'popular')?>">Popular</a></li>
+                <li <?php if ($sort == 'trending') { ?>class="active"<?php } ?>><a href="<?=$controller->getSearchURL($view, 'sort', 'trending')?>">Trending</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 <li><button onclick="window.location.href='<?=URL::to('/contribute', 'choose_type', 'tutorial')?>'" class="btn btn-default"><i class="fa fa-plus"></i> New Document</button></li>
@@ -31,7 +31,7 @@
     </nav>
 
 
-    <? foreach($results as $result) {
+    <?php foreach($results as $result) {
         $username = t('Unknown');
         $ui = UserInfo::getByID($result->getCollectionUserID());
         if (is_object($ui)) {
@@ -57,11 +57,11 @@
             </div>
         </article>
 
-    <? } ?>
+    <?php } ?>
 
-    <? if ($results->haveToPaginate()) { ?>
+    <?php if ($results->haveToPaginate()) { ?>
         <?=$results->renderDefaultView()?>
-    <? } ?>
+    <?php } ?>
 </div>
 
 </div>

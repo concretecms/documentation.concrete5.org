@@ -1,4 +1,4 @@
-<? 	defined('C5_EXECUTE') or die("Access Denied."); ?>
+<?php 	defined('C5_EXECUTE') or die("Access Denied."); ?>
 
     <div class="row">
         <div class="col-sm-6 col-sm-offset-3">

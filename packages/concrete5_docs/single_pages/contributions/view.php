@@ -1,6 +1,6 @@
-<? 	defined('C5_EXECUTE') or die("Access Denied."); ?>
+<?php 	defined('C5_EXECUTE') or die("Access Denied."); ?>
 
-<? if (count($results) > 0) { ?>
+<?php if (count($results) > 0) { ?>
 
     <h1><?=t('Your Contributions')?></h1>
     <a href="<?=URL::to('/contribute')?>" class="btn-documentation btn-info btn btn-lg"><?=t('Write Documentation')?></a>
@@ -18,42 +18,42 @@
     </tr>
     </thead>
     <tbody>
-    <? foreach($results as $page) { ?>
+    <?php foreach($results as $page) { ?>
         <tr>
             <td class="contribution-date"><span class="text-muted"><?=$page->getCollectionDatePublicObject()->format('F d, Y')?></span></td>
             <td class="contribution-name">
-                <? if ($controller->pageIsLive($page)) { ?>
+                <?php if ($controller->pageIsLive($page)) { ?>
                     <a href="<?=URL::to($page)?>"><?=$page->getCollectionName()?></a>
-                <? } else { ?>
+                <?php } else { ?>
                     <?=$page->getCollectionName()?>
-                <? } ?>
+                <?php } ?>
             </td>
             <td>
-                <? print $page->getPageTypeObject()->getPageTypeName();
+                <?php print $page->getPageTypeObject()->getPageTypeName();
                 ?>
             </td>
             <td class="contribution-status">
-                <? if ($controller->pageIsLive($page)) { ?>
+                <?php if ($controller->pageIsLive($page)) { ?>
                     Live
-                <? } else { ?>
+                <?php } else { ?>
                     <span class="text-danger">Not Live</span>
-                <? } ?>
+                <?php } ?>
             </td>
             <td><a class="icon-link" href="<?=URL::to('/contribute', 'edit', $page->getCollectionID())?>"><i class="fa fa-pencil"></i></a></td>
         </tr>
-    <? } ?>
+    <?php } ?>
     </tbody>
     </table>
 
-    <? if ($results->haveToPaginate()) { ?>
+    <?php if ($results->haveToPaginate()) { ?>
     <div style="text-align: center">
-        <? print $results->renderDefaultView();?>
+        <?php print $results->renderDefaultView();?>
     </div>
-        <? } ?>
+        <?php } ?>
 
 
 
-<? } else { ?>
+<?php } else { ?>
 
 
     <div class="" style="text-align: center"><br/><br/><br/>
@@ -63,4 +63,4 @@
     <a href="<?=URL::to('/contribute')?>" class="btn-info btn btn-large"><?=t('Write some Documentation')?></a>
 </p>    </div>
 
-<? } ?>
+<?php } ?>

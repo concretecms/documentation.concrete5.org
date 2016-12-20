@@ -1,4 +1,4 @@
-<?
+<?php
 namespace Concrete\Package\Markdown\Block\Markdown;
 use \Concrete\Core\Block\BlockController;
 use \Concrete\Core\Editor\LinkAbstractor;

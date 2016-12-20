@@ -1,4 +1,4 @@
-<?
+<?php
 namespace Application\Block\Markdown;
 
 use Concrete\Core\Block\Block;

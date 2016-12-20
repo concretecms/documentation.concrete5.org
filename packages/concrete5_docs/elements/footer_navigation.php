@@ -49,7 +49,7 @@
             </div>
         </div>
     </div>
-    <? /*
+    <?php /*
         <div class="menu">
             <div class="container">
                 <div class="row">

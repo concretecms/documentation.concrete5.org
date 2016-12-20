@@ -1,11 +1,11 @@
-<?
+<?php
 if (isset($composerContent)) {
     $content = $composerContent;
 }
 ?>
 
 <div id="ccm-block-markdown-editor"><?=h($content)?></div>
-<? if (!isset($fieldName)) {
+<?php if (!isset($fieldName)) {
     $fieldName = $view->field('content');
 } ?>
 <textarea style="display: none" id="ccm-block-markdown-value-textarea" name="<?=$fieldName?>"></textarea>

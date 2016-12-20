@@ -29,32 +29,32 @@ if (is_object($audienceObject)) {
                 ?>
                 by
 
-                <? if ($profile_link) { ?>
+                <?php if ($profile_link) { ?>
                     <a class="page-author" href="<?= $profile_link ?>"><?= $user->getUserDisplayName(); ?></a>
-                <? } else { ?>
+                <?php } else { ?>
                     <?= $user->getUserDisplayName(); ?>
-                <? } ?>
+                <?php } ?>
 
                 <?php
             }
             ?>
-            for <?=implode(', ', $audience)?> on <? print $date; ?></span>
+            for <?=implode(', ', $audience)?> on <?php print $date; ?></span>
 
         <ul class="byline-meta">
             <li><i class="fa fa-comment-o"></i> <?=$inspector->getTotalComments()?></li>
-            <li><i class="fa <? if ($userLikesThis) { ?>fa-heart heart-filled<? } else { ?>fa-heart-o<? } ?>"></i>
+            <li><i class="fa <?php if ($userLikesThis) { ?>fa-heart heart-filled<?php } else { ?>fa-heart-o<?php } ?>"></i>
             <?=t2('%s', '%s', $count, number_format($count))?>
-            <? if ($u->isRegistered()) { ?>
-                <? if (!$userLikesThis) { ?>
+            <?php if ($u->isRegistered()) { ?>
+                <?php if (!$userLikesThis) { ?>
                     <a href="<?=$view->action('like', Loader::helper('validation/token')->generate('like_page'))?>" data-action="block-like-page" class="btn btn-xs btn-link btn-default"><?=t('Like')?></a>
-                <? } else { ?>
+                <?php } else { ?>
                     <a href="<?=$view->action('unlike', Loader::helper('validation/token')->generate('unlike_page'))?>" data-action="block-unlike-page" class="btn btn-xs btn-link btn-default"><?=t('Un-Like')?></a>
-                <? } ?>
-            <? } ?>
-            <?
+                <?php } ?>
+            <?php } ?>
+            <?php
             if ($inspector->canEditInDocumentationComposer()) { ?>
                 <a class="btn btn-xs btn-link" href="<?=URL::to('/contribute', 'edit', $c->getCollectionID())?>"><?=t('Edit %s', $c->getPageTypeName())?></a>
-            <? } ?>
+            <?php } ?>
             </li>
         </ul>
     </div>

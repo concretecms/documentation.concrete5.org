@@ -1,6 +1,6 @@
 <?php defined('C5_EXECUTE') or die(_("Access Denied.")); ?>
 
-<?
+<?php
 $time = ini_get('max_execution_time');
 if ($time == 0 || $time > 30) {
     ?>
@@ -11,7 +11,7 @@ if ($time == 0 || $time > 30) {
             'recommended.') ?>
     </div>
 
-<? } else { ?>
+<?php } else { ?>
 
     <div class="alert alert-danger">
         <?php echo t(
@@ -21,4 +21,4 @@ if ($time == 0 || $time > 30) {
             $time) ?>
     </div>
 
-<? } ?>
+<?php } ?>
