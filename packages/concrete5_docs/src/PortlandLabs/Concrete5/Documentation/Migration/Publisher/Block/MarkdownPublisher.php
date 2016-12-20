@@ -11,11 +11,11 @@ use PortlandLabs\Concrete5\MigrationTool\Entity\Import\Area;
 use PortlandLabs\Concrete5\MigrationTool\Entity\Import\BlockValue\BlockValue;
 use Concrete\Core\Page\Page;
 use Concrete\Core\Block\BlockType\BlockType;
-use PortlandLabs\Concrete5\MigrationTool\Publisher\Block\PublisherInterface;
+// use PortlandLabs\Concrete5\MigrationTool\Publisher\Block\PublisherInterface;
 
 defined('C5_EXECUTE') or die("Access Denied.");
 
-class MarkdownPublisher implements PublisherInterface
+class MarkdownPublisher //implements PublisherInterface
 {
 
     public function publish(Batch $batch, $bt, Page $page, $area, BlockValue $value)
