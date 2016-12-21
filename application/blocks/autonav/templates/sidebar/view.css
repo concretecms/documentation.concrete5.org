@@ -1,0 +1,48 @@
+.nav-sidebar {
+    border: solid 1px #dcdada;
+    border-radius: 5px;
+    color: #08c;
+    padding: 15px 0;
+    font-weight: bold;
+    line-height: 20px;
+    font-size: 13px;
+    text-decoration: none
+}
+
+.nav-sidebar li.active>a,.nav-sidebar li:hover>a {
+    background-color: #f0f0f0;
+    color: black!important
+}
+
+.nav-sidebar li>a {
+    padding: 10px 30px 10px 30px!important
+}
+
+.nav-sidebar li.active>a {
+    background-color: #f0f0f0
+}
+
+.nav-sidebar .nav-sub-sidebar {
+    color: #049cdb;
+    margin-left: 20px
+}
+
+.nav-sidebar .nav-sub-sidebar>li>a {
+    color: #049cdb
+}
+
+.nav-sidebar .nav-sub-sidebar>li:hover>a {
+    color: #0064cd!important
+}
+
+.nav-sidebar .nav-sub-sidebar>li:hover,.nav-sidebar .nav-sub-sidebar>li:active,.nav-sidebar .nav-sub-sidebar>li:focus {
+    background-color: transparent
+}
+
+.nav-sidebar .nav-sub-sidebar>li:hover>a,.nav-sidebar .nav-sub-sidebar>li:active>a,.nav-sidebar .nav-sub-sidebar>li:focus>a {
+    background-color: transparent
+}
+
+.nav-sidebar .nav-sub-sidebar>li.active>a {
+    background-color: #f0f0f0
+}
