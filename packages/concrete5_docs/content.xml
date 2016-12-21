@@ -564,7 +564,7 @@
                             </area>
                             <area name="Sidebar">
                                 <blocks>
-                                    <block type="autonav" name="" custom-template="sidebar.php" mc-block-id="09UjCmNm">
+                                    <block type="autonav" name="" custom-template="sidebar" mc-block-id="09UjCmNm">
                                         <data table="btNavigation">
                                             <record>
                                                 <orderBy><![CDATA[display_asc]]></orderBy>
@@ -703,7 +703,7 @@
                             </area>
                             <area name="Sidebar">
                                 <blocks>
-                                    <block type="autonav" name="" custom-template="sidebar.php" mc-block-id="JlRElFCL">
+                                    <block type="autonav" name="" custom-template="sidebar" mc-block-id="JlRElFCL">
                                         <data table="btNavigation">
                                             <record>
                                                 <orderBy><![CDATA[display_asc]]></orderBy>
