@@ -5,7 +5,7 @@ $this->inc('elements/header.php'); ?>
 
 <main>
 
-    <?
+    <?php
     $a = new Area('Page Header');
     $a->enableGridContainer();
     $a->display($c);
@@ -13,42 +13,42 @@ $this->inc('elements/header.php'); ?>
     <div class="container">
         <div class="row">
             <div class="col-sm-8 col-content">
-                <?
+                <?php
                 $a = new Area('Main');
                 $a->setAreaGridMaximumColumns(12);
                 $a->display($c);
                 ?>
-                <?
+                <?php
                 $a = new Area('Conversation');
                 $a->setAreaGridMaximumColumns(12);
                 $a->display($c);
                 ?>
             </div>
             <div class="col-sm-4 col-sidebar">
-                <? if (is_object($tags)) { ?>
+                <?php if (is_object($tags)) { ?>
                 <section class="sidebar-item">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">Tags</h3>
                         </div>
                         <div class="panel-body">
-                            <? foreach($tags as $tag) {
+                            <?php foreach($tags as $tag) {
                                 $search = $controller->getSearchURL($tag);
                                 ?>
                                 <a href="<?=$search?>" class="label label-primary"><?=$tag->getSelectAttributeOptionValue()?></a>
-                            <? } ?>
+                            <?php } ?>
                         </div>
                     </div>
                 </section>
-                <? } ?>
-                <? if (count($tutorials)) { ?>
+                <?php } ?>
+                <?php if (count($tutorials)) { ?>
                 <section class="sidebar-item">
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h3 class="panel-title">Related Tutorials</h3>
                         </div>
                         <div class="panel-body">
-                            <? foreach($tutorials as $result) {
+                            <?php foreach($tutorials as $result) {
                                 $inspector = new \Concrete\Package\Concrete5Docs\Page\PageInspector($result);
                                 $ui = UserInfo::getByID($result->getCollectionUserID());
                                 if (is_object($ui)) {
@@ -64,19 +64,19 @@ $this->inc('elements/header.php'); ?>
                                     </div>
                                     <div class="tutorial-time"><?= $result->getCollectionDatePublicObject()->format('F d, Y')?></div>
                                 </article>
-                            <? } ?>
+                            <?php } ?>
                         </div>
                     </div>
                 </section>
-                <? } ?>
-                <? if (count($documentation)) { ?>
+                <?php } ?>
+                <?php if (count($documentation)) { ?>
                     <section class="sidebar-item">
                         <div class="panel panel-default">
                             <div class="panel-heading">
                                 <h3 class="panel-title">Related Documentation</h3>
                             </div>
                             <div class="panel-body">
-                                <? foreach($documentation as $result) {
+                                <?php foreach($documentation as $result) {
 
                                     $parent = Page::getByID($result->getCollectionParentID());
                                     ?>
@@ -86,13 +86,13 @@ $this->inc('elements/header.php'); ?>
                                             <div><small class="text-muted">Posted In <?=$parent->getCollectionName()?></small></div>
                                         </div>
                                     </article>
-                                <? } ?>
+                                <?php } ?>
                             </div>
                         </div>
                     </section>
-                <? } ?>
+                <?php } ?>
 
-                <?
+                <?php
                 $a = new Area('Sidebar');
                 $a->display($c);
                 ?>
@@ -101,7 +101,7 @@ $this->inc('elements/header.php'); ?>
         </div>
     </div>
 
-    <?
+    <?php
     $a = new Area('Page Footer');
     $a->enableGridContainer();
     $a->display($c);

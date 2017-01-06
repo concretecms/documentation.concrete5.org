@@ -1,6 +1,6 @@
 <?php defined('C5_EXECUTE') or die("Access Denied."); ?>
 
-<?
+<?php
 $user = new User();
 $token = \Core::make('token');
 

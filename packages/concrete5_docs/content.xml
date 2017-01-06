@@ -113,7 +113,7 @@
                 <blocks/>
             </area>
         </page>
-        <page name="Developers Guide" path="/developers" filename="" pagetype="page" template="full" user="admin"
+        <page name="Developers Guide" path="/developers" filename="" pagetype="developer_document" template="full" user="admin"
               description="" package="">
             <attributes>
                 <attributekey handle="meta_title">
@@ -305,6 +305,9 @@
         </page>
         <page name="Home" path="" filename="" pagetype="" template="full" user="admin" description="" package="">
             <attributes>
+                <attributekey handle="exclude_nav">
+                    <value><![CDATA[1]]></value>
+                </attributekey>
                 <attributekey handle="tags"/>
             </attributes>
             <area name="Main">
@@ -500,7 +503,7 @@
             <pagetemplates type="custom" default="document">
                 <pagetemplate handle="document"/>
             </pagetemplates>
-            <target handle="page_type" package="" path="/developers" pagetype="section" form-factor="sitemap_in_page"/>
+            <target handle="page_type" package="" path="/developers" pagetype="developer_document" form-factor="sitemap_in_page"/>
             <composer>
                 <formlayout>
                     <set name="" description="">
@@ -534,6 +537,20 @@
                             </area>
                             <area name="Page Header">
                                 <blocks>
+                                    <block type="autonav" name="" custom-template="docs_breadcrumb.php" mc-block-id="j9Zw1b7D">
+                                        <data table="btNavigation">
+                                            <record>
+                                                <orderBy><![CDATA[display_asc]]></orderBy>
+                                                <displaySystemPages><![CDATA[0]]></displaySystemPages>
+                                                <displayUnavailablePages><![CDATA[0]]></displayUnavailablePages>
+                                                <displayPages><![CDATA[top]]></displayPages>
+                                                <displayPagesCID/>
+                                                <displayPagesIncludeSelf><![CDATA[0]]></displayPagesIncludeSelf>
+                                                <displaySubPages><![CDATA[relevant_breadcrumb]]></displaySubPages>
+                                                <displaySubPageLevels><![CDATA[enough]]></displaySubPageLevels>
+                                            </record>
+                                        </data>
+                                    </block>
                                     <block type="page_title" name="" mc-block-id="VF4s8AGW">
                                         <data table="btPageTitle">
                                             <record>
@@ -547,7 +564,7 @@
                             </area>
                             <area name="Sidebar">
                                 <blocks>
-                                    <block type="autonav" name="" custom-template="sidebar.php" mc-block-id="09UjCmNm">
+                                    <block type="autonav" name="" custom-template="sidebar" mc-block-id="09UjCmNm">
                                         <data table="btNavigation">
                                             <record>
                                                 <orderBy><![CDATA[display_asc]]></orderBy>
@@ -630,6 +647,20 @@
                               user="admin" description="" package="">
                             <area name="Page Header">
                                 <blocks>
+                                    <block type="autonav" name="" custom-template="docs_breadcrumb.php" mc-block-id="j9Zw1b7D">
+                                        <data table="btNavigation">
+                                            <record>
+                                                <orderBy><![CDATA[display_asc]]></orderBy>
+                                                <displaySystemPages><![CDATA[0]]></displaySystemPages>
+                                                <displayUnavailablePages><![CDATA[0]]></displayUnavailablePages>
+                                                <displayPages><![CDATA[top]]></displayPages>
+                                                <displayPagesCID/>
+                                                <displayPagesIncludeSelf><![CDATA[0]]></displayPagesIncludeSelf>
+                                                <displaySubPages><![CDATA[relevant_breadcrumb]]></displaySubPages>
+                                                <displaySubPageLevels><![CDATA[enough]]></displaySubPageLevels>
+                                            </record>
+                                        </data>
+                                    </block>
                                     <block type="page_title" name="" mc-block-id="W5ZwMb7U">
                                         <data table="btPageTitle">
                                             <record>
@@ -672,7 +703,7 @@
                             </area>
                             <area name="Sidebar">
                                 <blocks>
-                                    <block type="autonav" name="" custom-template="sidebar.php" mc-block-id="JlRElFCL">
+                                    <block type="autonav" name="" custom-template="sidebar" mc-block-id="JlRElFCL">
                                         <data table="btNavigation">
                                             <record>
                                                 <orderBy><![CDATA[display_asc]]></orderBy>

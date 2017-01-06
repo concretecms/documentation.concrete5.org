@@ -44,7 +44,7 @@ print '<h1>Regular Sitemap</h1>';
             });
         });
     </script>
-    <?
+    <?php
 
     print '<br><br>';
 

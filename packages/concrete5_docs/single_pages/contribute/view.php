@@ -1,4 +1,4 @@
-<? 	defined('C5_EXECUTE') or die("Access Denied."); ?>
+<?php 	defined('C5_EXECUTE') or die("Access Denied."); ?>
 
     <div class="row">
         <div class="col-sm-12">
@@ -8,9 +8,9 @@
             <form action="<?=$action?>" method="post" enctype="multipart/form-data">
                 <?=$form->hidden('documentation_type', $documentationType)?>
                 <?=$token->output('save')?>
-                <? $pagetype->renderComposerOutputForm($document, $parent); ?>
+                <?php $pagetype->renderComposerOutputForm($document, $parent); ?>
 
-                <? if (is_object($document)) { ?>
+                <?php if (is_object($document)) { ?>
                     <hr/>
                     <div class="form-group">
                         <?=$form->label('versionComment', t('Reason for Changes'))?>
@@ -27,7 +27,7 @@
                         </div>
                     <?php } ?>
 
-                <? } ?>
+                <?php } ?>
 
                 <div class="form-actions">
                     <button type="submit" class="btn btn-primary pull-right"><?=$buttonTitle?></button>

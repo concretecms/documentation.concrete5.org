@@ -4,7 +4,7 @@
     <h1><?=t("Search Tutorials")?></h1>
     <form action="<?=$view->action('search')?>" class="tutorial-search-form" data-tutorial-search="<?=$b->getBlockID()?>">
         <input type="hidden" name="audience" value="<?=$audience?>" >
-    <input type="hidden" class="input-lg" value="<? if (is_object($selection)) { ?><?=$selection->id?><? } ?>" placeholder="<?=$placeholder?>" style="padding: 0px; width: 100%"
+    <input type="hidden" class="input-lg" value="<?php if (is_object($selection)) { ?><?=$selection->id?><?php } ?>" placeholder="<?=$placeholder?>" style="padding: 0px; width: 100%"
            name="search" />
         <button type="submit" class="btn-bordered-white btn-lg btn"><?=t('Search')?></button>
     </form>
@@ -56,9 +56,9 @@
                 }
             },
             initSelection: function(element, callback) {
-                <? if (is_object($selection)) { ?>
+                <?php if (is_object($selection)) { ?>
                     callback(<?=json_encode($selection)?>);
-                <? } ?>
+                <?php } ?>
             },
             formatResult: function(result, container, query) {
                 switch(result.type) {
