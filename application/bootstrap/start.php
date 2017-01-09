@@ -6,7 +6,7 @@ use Concrete\Core\Application\Application;
  * Load in a .env if there is one
  */
 try {
-    $dotenv = new Dotenv\Dotenv(__DIR__ . "/../../", 'myconfig');
+    $dotenv = new Dotenv\Dotenv(__DIR__ . "/../../");
     $dotenv->load();
 } catch (\Exception $e) {
     // Ignore exception
