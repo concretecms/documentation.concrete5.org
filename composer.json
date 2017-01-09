@@ -1,0 +1,19 @@
+{
+    "name": "portlandlabs/documentation.concrete5.org",
+    "description": "concrete5 documentation site",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "concrete5/concrete5": "8.0.3"
+    },
+    "scripts": {
+        "post-update-cmd": [
+            "cp -af vendor/concrete5/concrete5/concrete ./"
+        ],
+        "post-install-cmd": [
+            "cp -af vendor/concrete5/concrete5/concrete ./"
+        ]
+    }
+}

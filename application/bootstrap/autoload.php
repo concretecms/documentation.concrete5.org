@@ -1,10 +1,8 @@
-<?php defined('C5_EXECUTE') or die('Access Denied.');
+<?php
+defined('C5_EXECUTE') or die('Access Denied.');
 
-/**
- * ----------------------------------------------------------------------------
- * Load all composer autoload items.
- * ----------------------------------------------------------------------------
- */
-if (!@include(DIR_BASE_CORE . '/' . DIRNAME_VENDOR . '/autoload.php')) {
-    die('Third party libraries not installed. Make sure that composer has required libraries in the concrete/ directory.');
-}
+# Load in the composer vendor files
+require_once __DIR__ . "/../../vendor/autoload.php";
+
+# Add the vendor directory to the include path
+ini_set('include_path', __DIR__ . "/../../vendor" . PATH_SEPARATOR . get_include_path());
