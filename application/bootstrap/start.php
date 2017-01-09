@@ -2,6 +2,12 @@
 
 use Concrete\Core\Application\Application;
 
+$envPath = __DIR__ . "/../.env";
+if (file_exists($envPath)) {
+    // Parse the .env file
+    (new josegonzalez\Dotenv\Loader($envPath))->parse()->toEnv();
+}
+
 /**
  * ----------------------------------------------------------------------------
  * Instantiate concrete5
