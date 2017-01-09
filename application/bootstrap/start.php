@@ -2,10 +2,14 @@
 
 use Concrete\Core\Application\Application;
 
-$envPath = __DIR__ . "/../.env";
-if (file_exists($envPath)) {
-    // Parse the .env file
-    (new josegonzalez\Dotenv\Loader($envPath))->parse()->toEnv();
+/**
+ * Load in a .env if there is one
+ */
+try {
+    $dotenv = new Dotenv\Dotenv(__DIR__ . "/../../", 'myconfig');
+    $dotenv->load();
+} catch (\Exception $e) {
+    // Ignore exception
 }
 
 /**
