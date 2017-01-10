@@ -1,0 +1,20 @@
+destination: ../web/api
+source:
+	- ./concrete-latest/web/concrete
+	
+exclude:
+	- vendor/*
+	- elements/*
+	- config/database.php
+	- config/doctrine/*
+	- config/install/*
+	- */view.php
+	- */type_form.php
+	- */form.php
+	- */add.php
+	- */edit.php
+	
+download: yes
+
+templateConfig: templates/concrete5-api/config.neon
+title: concrete5 5.7 API
