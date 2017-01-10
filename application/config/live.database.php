@@ -6,7 +6,7 @@
 return array(
     'default-connection' => 'live',
     'connections' => array(
-        'wercker' => array(
+        'live' => array(
             'driver' => 'c5_pdo_mysql',
             'server' => getenv('DB_SERVER'),
             'database' => getenv('DB_DATABASE'),
