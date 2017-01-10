@@ -9,7 +9,8 @@
         "concrete5/concrete5": "8.0.3",
         "vlucas/phpdotenv": "^2.4",
         "aembler/addon_markdown": "^1.0",
-        "portlandlabs/addon_concrete5_theme": "^1.0"
+        "portlandlabs/addon_concrete5_theme": "^1.0",
+        "concrete5/addon_migration_tool": "^1.0"
     },
     "repositories": {
         "addon_markdown": {
@@ -35,6 +36,18 @@
                     "reference": "master"
                 }
             }
+        },
+        "addon_migration_tool": {
+            "type": "package",
+            "package": {
+                "name": "concrete5/addon_migration_tool",
+                "version": "1.0.0",
+                "source": {
+                    "url": "git@github.com:concrete5/addon_migration_tool.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
         }
 
     },
@@ -42,12 +55,14 @@
         "post-update-cmd": [
             "ln -sf `pwd`/vendor/concrete5/concrete5/concrete .",
             "ln -sf `pwd`/vendor/aembler/addon_markdown/packages/markdown ./packages",
-            "ln -sf `pwd`/vendor/portlandlabs/addon_concrete5_theme/packages/concrete5_theme ./packages"
+            "ln -sf `pwd`/vendor/portlandlabs/addon_concrete5_theme/packages/concrete5_theme ./packages",
+            "ln -sf `pwd`/vendor/concrete5/addon_migration_tool/packages/migration_tool ./packages"
         ],
         "post-install-cmd": [
             "ln -sf `pwd`/vendor/concrete5/concrete5/concrete ./",
             "ln -sf `pwd`/vendor/aembler/addon_markdown/packages/markdown ./packages",
-            "ln -sf `pwd`/vendor/portlandlabs/addon_concrete5_theme/packages/concrete5_theme ./packages"
+            "ln -sf `pwd`/vendor/portlandlabs/addon_concrete5_theme/packages/concrete5_theme ./packages",
+            "ln -sf `pwd`/vendor/concrete5/addon_migration_tool/packages/migration_tool ./packages"
         ]
     }
 }
