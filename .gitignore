@@ -58,3 +58,4 @@ __IDE_SYMBOLS__.php
 
 /vendor/
 composer.lock
+packages/markdown

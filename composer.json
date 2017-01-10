@@ -26,10 +26,12 @@
     },
     "scripts": {
         "post-update-cmd": [
-            "cp -af vendor/concrete5/concrete5/concrete ./"
+            "ln -sf `pwd`/vendor/concrete5/concrete5/concrete .",
+            "ln -sf `pwd`/vendor/aembler/addon_markdown/packages/markdown ./packages"
         ],
         "post-install-cmd": [
-            "cp -af vendor/concrete5/concrete5/concrete ./"
+            "ln -sf `pwd`/vendor/concrete5/concrete5/concrete ./",
+            "ln -sf `pwd`/vendor/aembler/addon_markdown/packages/markdown ./packages"
         ]
     }
 }
