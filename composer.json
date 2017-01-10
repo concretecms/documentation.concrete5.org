@@ -7,7 +7,22 @@
     "prefer-stable": true,
     "require": {
         "concrete5/concrete5": "8.0.3",
-        "vlucas/phpdotenv": "^2.4"
+        "vlucas/phpdotenv": "^2.4",
+        "aembler/addon_markdown": "^1.0"
+    },
+    "repositories": {
+        "addon_markdown": {
+            "type": "package",
+            "package": {
+                "name": "aembler/addon_markdown",
+                "version": "1.0.0",
+                "source": {
+                    "url": "git@bitbucket.org:aembler/addon_markdown.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
     },
     "scripts": {
         "post-update-cmd": [
