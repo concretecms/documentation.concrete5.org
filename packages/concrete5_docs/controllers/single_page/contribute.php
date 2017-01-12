@@ -17,6 +17,7 @@ class Contribute extends PageController
         $this->token = Core::make('token');
         $this->error = Core::make('error');
         $this->set('form', Core::make("helper/form"));
+        $this->requireAsset('core/app');
     }
 
     public function on_before_render()
