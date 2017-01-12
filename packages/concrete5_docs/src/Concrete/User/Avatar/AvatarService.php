@@ -59,7 +59,7 @@ class AvatarService implements AvatarServiceInterface
             $response = false;
         }
 
-        $item->set($response, 1800); // 30 minutes
+        $cache->save($item->set($response, 1800)); // 30 minutes
 
         return $response;
     }
