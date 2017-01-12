@@ -106,7 +106,7 @@ class Controller extends Package
 
         \Core::bind('Concrete\Core\User\UserInfo', 'Concrete\Package\Concrete5Docs\User\UserInfo');
 
-        \Core::bindShared('user.avatar', function() {
+        \Core::bindShared('user/avatar', function() {
             return \Core::make('Concrete\Package\Concrete5Docs\User\Avatar\AvatarService');
         });
 
