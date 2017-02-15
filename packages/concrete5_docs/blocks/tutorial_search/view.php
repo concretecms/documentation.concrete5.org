@@ -51,7 +51,7 @@
                     return {
                         id: term,
                         type: 'query',
-                        text: term
+                        text: _.escape(term)
                     };
                 }
             },
