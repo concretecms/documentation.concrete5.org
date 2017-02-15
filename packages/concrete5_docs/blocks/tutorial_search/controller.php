@@ -34,7 +34,6 @@ class Controller extends BlockController
         $placeholder = $placeholders[0];
         $this->set('placeholder', $placeholder);
         $this->requireAsset('select2');
-        $this->requireAsset('javascript', 'underscore');
 
         if ($this->request->query->has('search')) {
             $kw = $this->request->query->get('search');
