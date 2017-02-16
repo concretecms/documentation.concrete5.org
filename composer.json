@@ -10,7 +10,8 @@
         "vlucas/phpdotenv": "^2.4",
         "aembler/addon_markdown": "^1.0",
         "portlandlabs/addon_concrete5_theme": "^1.0",
-        "concrete5/addon_migration_tool": "^1.0"
+        "concrete5/addon_migration_tool": "^1.0",
+        "illuminate/container": "5.2.*"
     },
     "repositories": {
         "addon_markdown": {
