@@ -6,7 +6,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "concrete5/concrete5": "8.0.3",
+        "concrete5/concrete5": "8.1.0",
         "vlucas/phpdotenv": "^2.4",
         "aembler/addon_markdown": "^1.0",
         "portlandlabs/addon_concrete5_theme": "^1.0",
