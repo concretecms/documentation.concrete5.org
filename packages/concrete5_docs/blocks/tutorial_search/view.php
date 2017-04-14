@@ -45,9 +45,11 @@
         $('form[data-tutorial-search=<?=$b->getBlockID()?>] input[name=search]').select2({
             multiple: true,
             createSearchChoice: function(term, data) {
-                if ($(data).filter(function() {
-                        return this.text.localeCompare(term) === 0;
-                    }).length === 0) {
+                var filtered = $(data).filter(function() {
+                    return this.text.localeCompare(term) === 0;
+                });
+
+                if (filtered.length === 0) {
                     return {
                         id: term,
                         type: 'query',
@@ -96,6 +98,12 @@
                 results: function (data, page) {
                     // parse the results into the format expected by Select2.
                     // since we are using custom formatting functions we do not need to alter the remote JSON data
+
+                    data = data.map(function(result) {
+                        result.text = _.escape(result.text);
+                        return result;
+                    });
+
                     return { results: data };
                 }
             }
