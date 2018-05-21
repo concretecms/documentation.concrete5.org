@@ -1,0 +1,45 @@
+Version 1.0.1.2
+==================================================
+- Add Block Element for Opt-Out
+- Add option to customize the text
+
+Version 1.0.1.0
+==================================================
+- Save Decline Cookie state
+
+Version 1.0.0.9
+==================================================
+- Add new option: Language
+- Add new option: Method
+
+Version 1.0.0.8
+==================================================
+- Bugfix: Missing JS lib
+
+Version 1.0.0.7
+==================================================
+- Add World wide support
+
+Version 1.0.0.6
+==================================================
+- Bugfix: Tracking Codes included in concrete5 v8 without opt-in
+
+Version 1.0.0.5
+==================================================
+- Add post setup popup
+
+Version 1.0.0.4
+==================================================
+- Add support for EU General Data Protection Regulation (GDPR)
+
+Version 1.0.0.3
+==================================================
+- Fix PHP 5.3 downward compatibility of included 3rd party libs 
+
+Version 1.0.0.1
+==================================================
+- Fix PHP 5.3 downward compatibility
+
+Version 1.0.0.0
+==================================================
+- Add special offer notice

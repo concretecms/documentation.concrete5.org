@@ -1,0 +1,33 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-05-29 17:53+0200\n"
+"PO-Revision-Date: 2017-05-29 17:58+0200\n"
+"Last-Translator: Fabian Bitter <fabianbitter@fabians-macbook-air-2.local>\n"
+"Language-Team: German\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 1.8.7\n"
+
+msgid "This website uses cookies to ensure you get the best experience on our website."
+msgstr "يستخدم هذا الموقع ملفات تعريف الارتباط لضمان حصولك على أفضل تجربة على موقعنا."
+
+msgid "Learn more"
+msgstr "اعرف المزيد"
+
+msgid "Got it!"
+msgstr "فهمت ذلك!"
+
+msgid "Deny cookies"
+msgstr "رفض ملفات لتعريف الارتباط"
+
+msgid "Allow cookies"
+msgstr "السماح لملفات تعريف الارتباط"
+
+msgid "Decline cookies"
+msgstr "منع ملفات تعريف الارتباط"
+
