@@ -64,7 +64,6 @@ class Contribute extends PageController
 
     protected function getDocument($cID)
     {
-        $u = new \User();
         $c = \Page::getByID($cID);
         $document = false;
         if (is_object($c) && !$c->isError()) {
