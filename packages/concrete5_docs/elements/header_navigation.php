@@ -63,6 +63,9 @@ $token = \Core::make('token');
                     <?php
                     } else {
                         ?>
+                        <a class="profile-link" href="<?= \URL::to("/contribute") ?>">
+                            <?=t("Contribute")?>
+                        </a>
                         <a href="https://www.concrete5.org/register" class="sign-up">
                             <?= t('Join our Community') ?>
                         </a>
