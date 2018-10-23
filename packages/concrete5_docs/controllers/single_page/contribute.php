@@ -28,6 +28,11 @@ class Contribute extends PageController
 
     public function edit($cID = null)
     {
+        $u = new \User();
+        if (!$u->isRegistered()) {
+            $this->render('/contribute/login');
+            return;
+        }
         $document = $this->getDocument($cID);
         if (!$document) {
             $this->replace('/page_forbidden');
