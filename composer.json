@@ -55,14 +55,14 @@
     },
     "scripts": {
         "post-update-cmd": [
-            "ln -sf \"`pwd`/vendor/aembler/addon_markdown/packages/markdown\" ./packages",
-            "ln -sf \"`pwd`/vendor/portlandlabs/addon_concrete5_theme/packages/concrete5_theme\" ./packages",
-            "ln -sf \"`pwd`/vendor/concrete5/addon_migration_tool/packages/migration_tool\" ./packages"
+            "ln -sf ../vendor/aembler/addon_markdown/packages/markdown ./packages/markdown",
+            "ln -sf ../vendor/portlandlabs/addon_concrete5_theme/packages/concrete5_theme ./packages/addon_concrete5_theme",
+            "ln -sf ../vendor/concrete5/addon_migration_tool/packages/migration_tool ./packages/migration_tool"
         ],
         "post-install-cmd": [
-            "ln -sf \"`pwd`/vendor/aembler/addon_markdown/packages/markdown\" ./packages",
-            "ln -sf \"`pwd`/vendor/portlandlabs/addon_concrete5_theme/packages/concrete5_theme\" ./packages",
-            "ln -sf \"`pwd`/vendor/concrete5/addon_migration_tool/packages/migration_tool\" ./packages"
+            "ln -sf ../vendor/aembler/addon_markdown/packages/markdown ./packages/markdown",
+            "ln -sf ../vendor/portlandlabs/addon_concrete5_theme/packages/concrete5_theme ./packages/addon_concrete5_theme",
+            "ln -sf ../vendor/concrete5/addon_migration_tool/packages/migration_tool ./packages/migration_tool"
         ]
     }
 }
