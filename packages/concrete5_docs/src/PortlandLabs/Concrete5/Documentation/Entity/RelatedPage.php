@@ -2,33 +2,35 @@
 
 namespace PortlandLabs\Concrete5\Documentation\Entity;
 
+use Doctrine\ORM\Mapping as ORM;
+
 /**
- * @Entity
- * @Table(name="DocumentationRelatedPages", indexes={
- * @Index(name="page_id", columns={"page_id"})
+ * @ORM\Entity
+ * @ORM\Table(name="DocumentationRelatedPages", indexes={
+ * @ORM\Index(name="page_id", columns={"page_id"})
  * })
  */
 class RelatedPage
 {
 
     /**
-     * @Id @Column(type="integer")
-     * @GeneratedValue(strategy="AUTO")
+     * @ORM\Id @ORM\Column(type="integer")
+     * @ORM\GeneratedValue(strategy="AUTO")
      */
     protected $id;
 
     /**
-     * @Column(type="integer", nullable=false, options={"unsigned": true})
+     * @ORM\Column(type="integer", nullable=false, options={"unsigned": true})
      */
     protected $page_id;
 
     /**
-     * @Column(type="integer", nullable=false, options={"unsigned": true})
+     * @ORM\Column(type="integer", nullable=false, options={"unsigned": true})
      */
     protected $related_page_id;
 
     /**
-     * @Column(type="integer", nullable=false, options={"unsigned": true})
+     * @ORM\Column(type="integer", nullable=false, options={"unsigned": true})
      */
     protected $relation_score;
 
