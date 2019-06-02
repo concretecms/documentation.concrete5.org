@@ -27,8 +27,6 @@ class Controller extends Package
     protected $pkgAutoloaderRegistries = array(
         'src/PortlandLabs/Concrete5/Documentation' => '\PortlandLabs\Concrete5\Documentation'
     );
-    protected $pkgAllowsFullContentSwap = true;
-
 
     public function getPackageDescription()
     {
@@ -50,6 +48,7 @@ class Controller extends Package
         $ci = new ContentImporter();
         $ci->importContentFile($pkg->getPackagePath() . '/permissions.xml');
         $ci->importContentFile($pkg->getPackagePath() . '/required.xml');
+        $ci->importContentFile($pkg->getPackagePath() . '/content.xml');
     }
 
     public function upgrade()
