@@ -1,4 +1,4 @@
-# concrete5.org Documentation
+# concrete5.org Documentation Website
 
 This repo contains the source code for [documentation.concrete5.org](https://documentation.concrete5.org). It installs the shared concrete5.org theme, as well as a couple of add-ons.
 
