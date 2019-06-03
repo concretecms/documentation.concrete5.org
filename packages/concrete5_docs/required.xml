@@ -45,6 +45,6 @@
         <pagetemplate icon="blank.png" name="Tutorial" handle="tutorial" package="" internal=""/>
     </pagetemplates>
     <themes>
-        <theme handle="concrete5_docs" package="concrete5_docs" />
+        <theme handle="concrete5" package="concrete5_theme" />
     </themes>
 </concrete5-cif>

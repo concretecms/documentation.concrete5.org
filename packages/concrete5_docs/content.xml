@@ -395,7 +395,7 @@
         </page>
     </pages>
     <themes>
-        <theme handle="concrete5_docs" package="concrete5_docs" activated="1"/>
+        <theme handle="concrete5" package="concrete5_theme" activated="1"/>
     </themes>
     <singlepages>
         <page name="My Contributions" path="/contributions" filename="/contributions/view.php" pagetype="" user="admin"
@@ -866,5 +866,4 @@
             </composer>
         </pagetype>
     </pagetypes>
-
 </concrete5-cif>
