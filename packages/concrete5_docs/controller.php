@@ -22,7 +22,7 @@ class Controller extends Package
 
     protected $pkgHandle = 'concrete5_docs';
     protected $appVersionRequired = '8.3';
-    protected $pkgVersion = '0.80';
+    protected $pkgVersion = '0.81';
     protected $pkgAutoloaderMapCoreExtensions = true;
     protected $pkgAutoloaderRegistries = array(
         'src/PortlandLabs/Concrete5/Documentation' => '\PortlandLabs\Concrete5\Documentation'
@@ -49,6 +49,7 @@ class Controller extends Package
         $ci->importContentFile($pkg->getPackagePath() . '/permissions.xml');
         $ci->importContentFile($pkg->getPackagePath() . '/required.xml');
         $ci->importContentFile($pkg->getPackagePath() . '/content.xml');
+        $ci->importContentFile($pkg->getPackagePath() . '/videos.xml');
     }
 
     public function upgrade()
@@ -58,6 +59,7 @@ class Controller extends Package
         $ci = new ContentImporter();
         $ci->importContentFile($pkg->getPackagePath() . '/permissions.xml');
         $ci->importContentFile($pkg->getPackagePath() . '/required.xml');
+        $ci->importContentFile($pkg->getPackagePath() . '/videos.xml');
     }
 
     public function on_start()

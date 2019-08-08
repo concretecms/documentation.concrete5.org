@@ -59,4 +59,6 @@ __IDE_SYMBOLS__.php
 
 /vendor/
 composer.lock
-packages/*
+packages/ec_recaptcha
+packages/markdown
+packages/concrete5_theme
