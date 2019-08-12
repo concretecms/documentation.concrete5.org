@@ -23,6 +23,9 @@
                             <a href="<?=DIR_REL?>/tutorials">Tutorials</a>
                         </li>
                         <li>
+                            <a href="<?=DIR_REL?>/videos">Videos</a>
+                        </li>
+                        <li>
                             <a href="<?=DIR_REL?>/api">API</a>
                         </li>
                         <li>
