@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<concrete5-cif version="1.0">
+    <expressentities>
+        <entity id="05bc04e0-b94b-11e9-936b-000c6c0a6826" handle="youtubevideo" plural_handle="youtubevideos" name="YouTube Video" supports_custom_display_order="" include_in_public_list="1" description="" default_view_form="05bc1386-b94b-11e9-936b-000c6c0a6826" default_edit_form="05bc1386-b94b-11e9-936b-000c6c0a6826" results-folder="/">
+            <attributekeys>
+                <attributekey handle="video_block_name" name="Name" package="" searchable="1" indexed="1" type="text" category="">
+                    <type placeholder=""/>
+                </attributekey>
+                <attributekey handle="youtube_id" name="YouTube ID" package="" searchable="1" indexed="1" type="text" category="">
+                    <type placeholder=""/>
+                </attributekey>
+                <attributekey handle="video_block_date" name="Published Date" package="" searchable="1" indexed="1" type="date_time" category="">
+                    <type use-now-if-empty="1" mode="date" text-custom-format="" time-resolution="60"/>
+                </attributekey>
+                <attributekey handle="video_block_description" name="Description" package="" searchable="1" indexed="1" type="textarea" category="">
+                    <type mode="text"/>
+                </attributekey>
+            </attributekeys>
+            <forms>
+                <form id="05bc1386-b94b-11e9-936b-000c6c0a6826" name="Form">
+                    <fieldsets>
+                        <fieldset title="" description="">
+                            <controls>
+                                <control id="66fae28e-b95b-11e9-936b-000c6c0a6826" type="attribute_key" required="" custom-label="">
+                                    <attributekey handle="video_block_name"/>
+                                </control>
+                                <control id="6c73023c-b95b-11e9-936b-000c6c0a6826" type="attribute_key" required="" custom-label="">
+                                    <attributekey handle="youtube_id"/>
+                                </control>
+                                <control id="6f19efbe-b95b-11e9-936b-000c6c0a6826" type="attribute_key" required="" custom-label="">
+                                    <attributekey handle="video_block_date"/>
+                                </control>
+                                <control id="c2ed0a88-bd32-11e9-936b-000c6c0a6826" type="attribute_key" required="" custom-label="">
+                                    <attributekey handle="video_block_description"/>
+                                </control>
+                            </controls>
+                        </fieldset>
+                    </fieldsets>
+                </form>
+            </forms>
+        </entity>
+    </expressentities>
+    <pages>
+        <page name="Videos: Learn Concrete5" path="/videos" public-date="2019-08-12 12:14:00" filename="" pagetype="page" template="full" user="admin" description="" package="">
+            <area name="Main">
+                <blocks>
+                    <block type="express_entry_list" name="" custom-template="YouTube_Video_List.php">
+                        <data table="btExpressEntryList">
+                            <record>
+                                <exEntityID><![CDATA[05bc04e0-b94b-11e9-936b-000c6c0a6826]]></exEntityID>
+                                <detailPage><![CDATA[0]]></detailPage>
+                                <linkedProperties><![CDATA[[]]]></linkedProperties>
+                                <searchProperties><![CDATA[Array]]></searchProperties>
+                                <searchAssociations><![CDATA[Array]]></searchAssociations>
+                                <columns><![CDATA[O:48:"Concrete\Core\Express\Search\ColumnSet\ColumnSet":2:{s:10:"]]></columns>
+                                <filterFields><![CDATA[a:0:{}]]></filterFields>
+                                <displayLimit><![CDATA[16]]></displayLimit>
+                                <enableSearch><![CDATA[0]]></enableSearch>
+                                <enableKeywordSearch><![CDATA[0]]></enableKeywordSearch>
+                                <headerBackgroundColor><![CDATA[]]></headerBackgroundColor>
+                                <headerBackgroundColorActiveSort><![CDATA[]]></headerBackgroundColorActiveSort>
+                                <headerTextColor><![CDATA[]]></headerTextColor>
+                                <tableName><![CDATA[]]></tableName>
+                                <tableDescription><![CDATA[]]></tableDescription>
+                                <tableStriped><![CDATA[0]]></tableStriped>
+                                <rowBackgroundColorAlternate><![CDATA[]]></rowBackgroundColorAlternate>
+                            </record>
+                        </data>
+                    </block>
+                </blocks>
+            </area>
+            <area name="Page Footer">
+                <blocks/>
+            </area>
+        </page>
+    </pages>
+</concrete5-cif>
