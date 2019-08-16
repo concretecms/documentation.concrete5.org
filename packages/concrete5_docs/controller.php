@@ -22,11 +22,11 @@ class Controller extends Package
 
     protected $pkgHandle = 'concrete5_docs';
     protected $appVersionRequired = '8.3';
-    protected $pkgVersion = '0.80';
+    protected $pkgVersion = '0.93';
     protected $pkgAutoloaderMapCoreExtensions = true;
-    protected $pkgAutoloaderRegistries = array(
+    protected $pkgAutoloaderRegistries = [
         'src/PortlandLabs/Concrete5/Documentation' => '\PortlandLabs\Concrete5\Documentation'
-    );
+    ];
 
     public function getPackageDescription()
     {
