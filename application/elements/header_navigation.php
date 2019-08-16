@@ -14,7 +14,7 @@
                 <nav class="collapse navbar-collapse documentation-navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="active">
-                            <a href="<?=DIR_REL?>/editors">Editors</a>
+                            <a href="<?=DIR_REL?>/user-guide">User Guide</a>
                         </li>
                         <li>
                             <a href="<?=DIR_REL?>/developers">Developers</a>
@@ -23,7 +23,7 @@
                             <a href="<?=DIR_REL?>/tutorials">Tutorials</a>
                         </li>
                         <li>
-                            <a href="<?=DIR_REL?>/api">API</a>
+                            <a href="<?=DIR_REL?>/videos">Videos</a>
                         </li>
                         <li>
                             <a href="<?=DIR_REL?>/contribute">Contribute</a>
