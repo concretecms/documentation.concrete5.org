@@ -44,10 +44,12 @@ class Controller extends BlockController
     {
         parent::on_before_render();
 
-        $tags = Page::getCurrentPage()->getAttribute('tags');
-        if ($tags) {
-            foreach ($tags as $tag) {
-                $this->list->filterByAttribute('tags', $tag);
+        if ($this->filteredByTags) {
+            $tags = Page::getCurrentPage()->getAttribute('tags');
+            if ($tags) {
+                foreach ($tags as $tag) {
+                    $this->list->filterByAttribute('tags', $tag);
+                }
             }
         }
 
@@ -110,8 +112,10 @@ class Controller extends BlockController
 
     public function save($data)
     {
-        $data['maxNumber'] = (int)$data['maxNumber'];
+        $data['title'] = (string)$data['title'];
 
+        $data['maxNumber'] = (int)$data['maxNumber'];
+        
         $data['filteredAudienceAll'] = $data['filteredAudienceOption'] === self::AUDIENCE_ALL ? 1 : 0;
         $data['filteredAudienceDevelopers'] = $data['filteredAudienceOption'] === self::AUDIENCE_DEVELOPERS ? 1 : 0;
         $data['filteredAudienceDesigners'] = $data['filteredAudienceOption'] === self::AUDIENCE_DESIGNERS ? 1 : 0;

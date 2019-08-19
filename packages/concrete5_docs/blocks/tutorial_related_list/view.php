@@ -6,6 +6,8 @@ use Concrete\Package\Concrete5Docs\Page\PageInspector;
 
 <div style="margin-bottom: 20px;">
     <hr>
+    <h3><?= $title ?></h3>
+    
     <?php
     if ($results) {
 

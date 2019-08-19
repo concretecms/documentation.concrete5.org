@@ -22,7 +22,7 @@ class Controller extends Package
 
     protected $pkgHandle = 'concrete5_docs';
     protected $appVersionRequired = '8.3';
-    protected $pkgVersion = '0.86';
+    protected $pkgVersion = '0.87';
 
     protected $pkgAutoloaderMapCoreExtensions = true;
     protected $pkgAutoloaderRegistries = [

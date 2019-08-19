@@ -4,8 +4,32 @@ defined('C5_EXECUTE') or die("Access Denied.");
 
 <fieldset>
     <div class="form-group">
+        <label class="control-label" for="title"><?= t('Block Title') ?></label>
+        <input type="text" class="form-control" name="title" value="<?= $title ? h($title) : t('Tutorials') ?>">
+    </div>
+
+    <div class="form-group">
         <label class="control-label" for="maxNumber"><?= t('Max Results') ?></label>
         <input type="text" class="form-control" name="maxNumber" value="<?= $maxNumber ?>">
+    </div>
+
+    <div class="form-group">
+        <label class="control-label" for="filteredByTags"><?= t('Filtered by Tags') ?></label>
+        
+
+        <div class="row">
+            <div class="col-xs-12">
+                <input type="radio" name="filteredByTags" value="0" <?= (!$filteredByTags || $filteredByTags === 0) ? 'checked' : '' ?> />
+                <?= t('No filtering by Tag') ?>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12">
+                <input type="radio" name="filteredByTags" value="1" <?= $filteredByTags ? 'checked' : '' ?> />
+                <?= t('Filter by Tags on current page') ?>
+            </div>
+        </div>
+        
     </div>
 
     <div class="form-group">
@@ -19,7 +43,15 @@ defined('C5_EXECUTE') or die("Access Denied.");
         ];
 
         foreach ($audienceOptions as $audienceOptionValue => $audienceOptionLabel) {
-            $isChecked = ($filteredAudienceOption === $audienceOptionValue) ? 'checked' : ''; ?>
+            $isChecked = '';
+
+            if ($filteredAudienceOption) {
+                $isChecked = ($filteredAudienceOption === $audienceOptionValue) ? 'checked' : ''; 
+            } else {
+                $isChecked = ($audienceOptionValue === $all) ? 'checked' : '';
+            }
+            
+        ?>
 
             <div class="row">
                 <div class="col-xs-12">
@@ -41,7 +73,14 @@ defined('C5_EXECUTE') or die("Access Denied.");
         ];
 
         foreach ($sortOptions as $optionValue => $optionLabel) {
-            $isChecked = ($sortByOptions === $optionValue) ? 'checked' : ''; ?>
+            $isChecked = '';
+
+            if ($sortByOptions) {
+                $isChecked = ($sortByOptions === $optionValue) ? 'checked' : '';     
+            } else {
+                $isChecked = ($optionValue === $newest) ? 'checked' : '';
+            }
+        ?>
 
             <div class="row">
                 <div class="col-xs-12">

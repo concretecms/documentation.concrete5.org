@@ -5,6 +5,11 @@
             <unsigned/>
             <key/>
         </field>
+        <field name="title" type="C">
+            <unsigned/>
+            <default value="Tutorial"/>
+            <notnull/>
+        </field>
         <field name="maxNumber" type="I2">
             <unsigned/>
             <default value="6"/>
@@ -51,6 +56,11 @@
             <notnull/>
         </field>
         <field name="filteredAudienceDesigners" type="L">
+            <unsigned/>
+            <default value="0"/>
+            <notnull/>
+        </field>
+        <field name="filteredByTags" type="L">
             <unsigned/>
             <default value="0"/>
             <notnull/>
