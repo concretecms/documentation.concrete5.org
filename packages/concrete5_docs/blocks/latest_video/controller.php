@@ -49,7 +49,6 @@ class Controller extends BlockController
 
         $videos = $list->getResults();
 
-        /** @var \Concrete\Core\Entity\Express\Entry $videoObj */
         $videoObj = $videos[0];
     
         $this->set('videoObj', $videoObj);

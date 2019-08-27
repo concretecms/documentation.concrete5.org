@@ -1,5 +1,6 @@
 <?php
-defined('C5_EXECUTE') or die("Access Denied."); 
+defined('C5_EXECUTE') or die("Access Denied.");
+/** @var \Concrete\Core\Entity\Express\Entry $videoObj */ 
 ?>
 
 <?php if ($videoObj) { ?>
@@ -12,12 +13,10 @@ defined('C5_EXECUTE') or die("Access Denied.");
     <h4>
         <a class="popup-video" href="https://www.youtube.com/watch?v=<?= $videoObj->getYoutubeId() ?>?autoplay=1&rel=0">
             <?= t($videoObj->getVideoBlockName()) ?>
-            <?php
-            foreach ($videoObj->getVideoBlockAudience()->getSelectedOptions() as $option) {
-                /** @var \Concrete\Core\Entity\Attribute\Value\Value\SelectValueOption $option */ ?>
-                <span class="label label-default"><?= t($option->getSelectAttributeOptionValue()) ?></span>
-            <?php } ?>
         </a>
+        <br>
+        <?php $date = $videoObj->getVideoBlockDate(); ?>
+        <span class="small"><?= t('Posted on '.$date->format('F d, Y')) ?></span>
     </h4>
 <?php } ?>
 
