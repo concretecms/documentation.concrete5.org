@@ -36,6 +36,7 @@
         <blocktype handle="markdown" package="markdown"/>
         <blocktype handle="tutorial_search" package="concrete5_docs"/>
         <blocktype handle="tutorial_list" package="concrete5_docs"/>
+        <blocktype handle="latest_video" package="concrete5_docs"/>
         <blocktype handle="likes_this" package="likes_this_block"/>
     </blocktypes>
     <pagetemplates>

@@ -15,6 +15,15 @@
                 <attributekey handle="video_block_description" name="Description" package="" searchable="1" indexed="1" type="textarea" category="">
                     <type mode="text"/>
                 </attributekey>
+                <attributekey handle="video_block_audience" name="Audience" package="" searchable="1" indexed="1" type="select" category="">
+                    <type allow-multiple-values="1" display-order="display_asc" display-multiple-values="1" allow-other-values="" hide-none-option="1">
+                        <options>
+                            <option value="Editors" is-end-user-added=""/>
+                            <option value="Developers" is-end-user-added=""/>
+                            <option value="Designers" is-end-user-added=""/>
+                        </options>
+                    </type>
+                </attributekey>
             </attributekeys>
             <forms>
                 <form id="05bc1386-b94b-11e9-936b-000c6c0a6826" name="Form">
@@ -32,6 +41,9 @@
                                 </control>
                                 <control id="c2ed0a88-bd32-11e9-936b-000c6c0a6826" type="attribute_key" required="" custom-label="">
                                     <attributekey handle="video_block_description"/>
+                                </control>
+                                <control id="6d811c52-c524-11e9-867d-acde48001122" type="attribute_key" required="" custom-label="">
+                                    <attributekey handle="video_block_audience"/>
                                 </control>
                             </controls>
                         </fieldset>
