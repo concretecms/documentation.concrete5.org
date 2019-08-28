@@ -3,17 +3,26 @@
     <expressentities>
         <entity id="05bc04e0-b94b-11e9-936b-000c6c0a6826" handle="youtubevideo" plural_handle="youtubevideos" name="YouTube Video" supports_custom_display_order="" include_in_public_list="1" description="" default_view_form="05bc1386-b94b-11e9-936b-000c6c0a6826" default_edit_form="05bc1386-b94b-11e9-936b-000c6c0a6826" results-folder="/">
             <attributekeys>
-                <attributekey handle="video_block_name" name="Name" package="" searchable="1" indexed="1" type="text" category="">
+                <attributekey handle="video_name" name="Name" package="" searchable="1" indexed="1" type="text" category="">
                     <type placeholder=""/>
                 </attributekey>
                 <attributekey handle="youtube_id" name="YouTube ID" package="" searchable="1" indexed="1" type="text" category="">
                     <type placeholder=""/>
                 </attributekey>
-                <attributekey handle="video_block_date" name="Published Date" package="" searchable="1" indexed="1" type="date_time" category="">
+                <attributekey handle="video_date" name="Published Date" package="" searchable="1" indexed="1" type="date_time" category="">
                     <type use-now-if-empty="1" mode="date" text-custom-format="" time-resolution="60"/>
                 </attributekey>
-                <attributekey handle="video_block_description" name="Description" package="" searchable="1" indexed="1" type="textarea" category="">
+                <attributekey handle="video_description" name="Description" package="" searchable="1" indexed="1" type="textarea" category="">
                     <type mode="text"/>
+                </attributekey>
+                <attributekey handle="video_audience" name="Audience" package="" searchable="1" indexed="1" type="select" category="">
+                    <type allow-multiple-values="1" display-order="display_asc" display-multiple-values="1" allow-other-values="" hide-none-option="1">
+                        <options>
+                            <option value="Editors" is-end-user-added=""/>
+                            <option value="Developers" is-end-user-added=""/>
+                            <option value="Designers" is-end-user-added=""/>
+                        </options>
+                    </type>
                 </attributekey>
             </attributekeys>
             <forms>
@@ -22,16 +31,19 @@
                         <fieldset title="" description="">
                             <controls>
                                 <control id="66fae28e-b95b-11e9-936b-000c6c0a6826" type="attribute_key" required="" custom-label="">
-                                    <attributekey handle="video_block_name"/>
+                                    <attributekey handle="video_name"/>
                                 </control>
                                 <control id="6c73023c-b95b-11e9-936b-000c6c0a6826" type="attribute_key" required="" custom-label="">
                                     <attributekey handle="youtube_id"/>
                                 </control>
                                 <control id="6f19efbe-b95b-11e9-936b-000c6c0a6826" type="attribute_key" required="" custom-label="">
-                                    <attributekey handle="video_block_date"/>
+                                    <attributekey handle="video_date"/>
                                 </control>
                                 <control id="c2ed0a88-bd32-11e9-936b-000c6c0a6826" type="attribute_key" required="" custom-label="">
-                                    <attributekey handle="video_block_description"/>
+                                    <attributekey handle="video_description"/>
+                                </control>
+                                <control id="6d811c52-c524-11e9-867d-acde48001122" type="attribute_key" required="" custom-label="">
+                                    <attributekey handle="video_audience"/>
                                 </control>
                             </controls>
                         </fieldset>

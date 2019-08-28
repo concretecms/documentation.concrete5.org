@@ -27,13 +27,18 @@ if ($entity) { ?>
                     <div class="col-xs-3">
                         <a class="popup-video"
                            href="https://www.youtube.com/watch?v=<?= $video->getYoutubeId() ?>?autoplay=1&rel=0"
-                           title="<?= $video->getVideoBlockDescription() ?>">
+                           title="<?= $video->getVideoDescription() ?>">
                             <img src="https://img.youtube.com/vi/<?= $video->getYoutubeId() ?>/maxresdefault.jpg"
                                  width="100%" style="border:1px solid #ccc;"/>
                         </a>
-                        <h4><a class="popup-video"
+                        <h4>
+                            <a class="popup-video"
                                href="https://www.youtube.com/watch?v=<?= $video->getYoutubeId() ?>?autoplay=1&rel=0">
-                                <?= $video->getVideoBlockName() ?></a></h4>
+                            <?= $video->getVideoName() ?></a>
+                            <br>
+                            <?php $date = $video->getVideoDate(); ?>
+                            <span class="small"><?= t('Posted on '.$date->format('F d, Y')) ?></span>
+                        </h4>
                     </div>
 
                     <?php
