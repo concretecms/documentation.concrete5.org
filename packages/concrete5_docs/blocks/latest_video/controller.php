@@ -37,11 +37,11 @@ class Controller extends BlockController
         $list = new EntryList($entity);
 
         if ($this->filteredAudienceDevelopers){
-            $list->filterByVideoBlockAudience(self::AUDIENCE_DEVELOPERS);
+            $list->filterByVideoAudience(self::AUDIENCE_DEVELOPERS);
         } elseif ($this->filteredAudienceEditors) {
-            $list->filterByVideoBlockAudience(self::AUDIENCE_EDITORS);
+            $list->filterByVideoAudience(self::AUDIENCE_EDITORS);
         } elseif ($this->filteredAudienceDesigners) {
-            $list->filterByVideoBlockAudience(self::AUDIENCE_DESIGNERS);
+            $list->filterByVideoAudience(self::AUDIENCE_DESIGNERS);
         } 
         
         $list->sortByDateAddedDescending();
