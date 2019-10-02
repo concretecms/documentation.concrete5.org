@@ -58,7 +58,6 @@ __IDE_SYMBOLS__.php
 .phpstorm.meta.php
 
 /vendor/
-composer.lock
 packages/ec_recaptcha
 packages/markdown
 packages/concrete5_theme
