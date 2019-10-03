@@ -10,7 +10,7 @@
         "concrete5/core": "^8.3.2",
         "vlucas/phpdotenv": "^2.4",
         "aembler/addon_markdown": "^1.0",
-        "concrete5/addon_concrete5_theme": "^1.0",
+        "concrete5/addon_concrete5_theme": "dev-master",
         "illuminate/container": "5.2.*"
     },
     "repositories": {
@@ -27,16 +27,8 @@
             }
         },
         "addon_concrete5_theme": {
-            "type": "package",
-            "package": {
-                "name": "concrete5/addon_concrete5_theme",
-                "version": "1.0.0",
-                "source": {
-                    "url": "https://github.com/concrete5/addon_concrete5_theme.git",
-                    "type": "git",
-                    "reference": "master"
-                }
-            }
+            "type": "vcs",
+            "url": "https://github.com/concrete5/addon_concrete5_theme.git"
         }
     },
     "scripts": {

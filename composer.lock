@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "cb7e9b4bbccd65f68895f36cd32e77cc",
+    "content-hash": "eb86041e065f40642584da1d933c6720",
     "packages": [
         {
             "name": "aembler/addon_markdown",
@@ -180,13 +180,27 @@
         },
         {
             "name": "concrete5/addon_concrete5_theme",
-            "version": "1.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/addon_concrete5_theme.git",
-                "reference": "master"
+                "reference": "6beb20cd31614d7091eedda83010ac9b4eb5fe3d"
             },
-            "type": "library"
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/concrete5/addon_concrete5_theme/zipball/6beb20cd31614d7091eedda83010ac9b4eb5fe3d",
+                "reference": "6beb20cd31614d7091eedda83010ac9b4eb5fe3d",
+                "shasum": ""
+            },
+            "require-dev": {
+                "concrete5/core": "^8.3"
+            },
+            "type": "library",
+            "support": {
+                "source": "https://github.com/concrete5/addon_concrete5_theme/tree/master",
+                "issues": "https://github.com/concrete5/addon_concrete5_theme/issues"
+            },
+            "time": "2019-10-02T23:41:35+00:00"
         },
         {
             "name": "concrete5/core",
@@ -3156,9 +3170,9 @@
             "authors": [
                 {
                     "name": "Michele Locati",
-                    "role": "Author",
                     "email": "mlocati@gmail.com",
-                    "homepage": "https://github.com/mlocati"
+                    "homepage": "https://github.com/mlocati",
+                    "role": "Author"
                 }
             ],
             "description": "Handle IPv4, IPv6 addresses and ranges",
@@ -3213,9 +3227,9 @@
             "authors": [
                 {
                     "name": "Serban Ghita",
-                    "role": "Developer",
                     "email": "serbanghita@gmail.com",
-                    "homepage": "http://mobiledetect.net"
+                    "homepage": "http://mobiledetect.net",
+                    "role": "Developer"
                 }
             ],
             "description": "Mobile_Detect is a lightweight PHP class for detecting mobile devices. It uses the User-Agent string combined with specific HTTP headers to detect the mobile environment.",
@@ -3700,28 +3714,28 @@
             "authors": [
                 {
                     "name": "Jim Wigginton",
-                    "role": "Lead Developer",
-                    "email": "terrafrost@php.net"
+                    "email": "terrafrost@php.net",
+                    "role": "Lead Developer"
                 },
                 {
                     "name": "Patrick Monnerat",
-                    "role": "Developer",
-                    "email": "pm@datasphere.ch"
+                    "email": "pm@datasphere.ch",
+                    "role": "Developer"
                 },
                 {
                     "name": "Andreas Fischer",
-                    "role": "Developer",
-                    "email": "bantu@phpbb.com"
+                    "email": "bantu@phpbb.com",
+                    "role": "Developer"
                 },
                 {
                     "name": "Hans-Jürgen Petrich",
-                    "role": "Developer",
-                    "email": "petrich@tronic-media.com"
+                    "email": "petrich@tronic-media.com",
+                    "role": "Developer"
                 },
                 {
                     "name": "Graham Campbell",
-                    "role": "Developer",
-                    "email": "graham@alt-three.com"
+                    "email": "graham@alt-three.com",
+                    "role": "Developer"
                 }
             ],
             "description": "PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
@@ -6661,7 +6675,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "concrete5/addon_concrete5_theme": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
