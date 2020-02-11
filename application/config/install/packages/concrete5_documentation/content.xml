@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<concrete5-cif version="1.0">
+
+    <packages>
+        <package handle="likes_this_block"/>
+        <package handle="markdown"/>
+        <package handle="concrete5_theme"/>
+        <package handle="concrete5_docs"/>
+    </packages>
+
+</concrete5-cif>
