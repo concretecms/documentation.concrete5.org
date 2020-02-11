@@ -113,7 +113,8 @@
                 <blocks/>
             </area>
         </page>
-        <page name="Developers Guide" path="/developers" filename="" pagetype="developer_document" template="full" user="admin"
+        <page name="Developers Guide" path="/developers" filename="" pagetype="developer_document" template="full"
+              user="admin"
               description="" package="">
             <attributes>
                 <attributekey handle="meta_title">
@@ -503,7 +504,8 @@
             <pagetemplates type="custom" default="document">
                 <pagetemplate handle="document"/>
             </pagetemplates>
-            <target handle="page_type" package="" path="/developers" pagetype="developer_document" form-factor="sitemap_in_page"/>
+            <target handle="page_type" package="" path="/developers" pagetype="developer_document"
+                    form-factor="sitemap_in_page"/>
             <composer>
                 <formlayout>
                     <set name="" description="">
@@ -537,7 +539,8 @@
                             </area>
                             <area name="Page Header">
                                 <blocks>
-                                    <block type="autonav" name="" custom-template="docs_breadcrumb.php" mc-block-id="j9Zw1b7D">
+                                    <block type="autonav" name="" custom-template="docs_breadcrumb.php"
+                                           mc-block-id="j9Zw1b7D">
                                         <data table="btNavigation">
                                             <record>
                                                 <orderBy><![CDATA[display_asc]]></orderBy>
@@ -620,12 +623,41 @@
                 </output>
             </composer>
         </pagetype>
+        <pagetype name="Landing Page" handle="landing_page" package="" launch-in-composer="1" is-frequently-added="1">
+            <pagetemplates type="all" default="full"/>
+            <target handle="all" package="" form-factor=""/>
+            <composer>
+                <formlayout>
+                    <set name="" description="">
+                        <control custom-template="" required="1" custom-label="" description=""
+                                 type="core_page_property" handle="name"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="description"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="url_slug"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="page_template"/>
+                        <control custom-template="" custom-label="" description="" type="core_page_property"
+                                 handle="publish_target"/>
+                        <control custom-template="" custom-label="" description="" output-control-id="a2098c6b"
+                                 type="block" handle="content"/>
+                    </set>
+                </formlayout>
+                <output>
+                    <pagetemplate handle="full">
+                        <page name="" path="" public-date="2020-02-11 13:09:49" filename="" pagetype="landing"
+                              template="full" user="admin" description="" package="" root="true"/>
+                    </pagetemplate>
+                </output>
+            </composer>
+        </pagetype>
         <pagetype name="Editor Document" handle="editor_document" package="" launch-in-composer="1"
                   is-frequently-added="1">
             <pagetemplates type="custom" default="editor_document">
                 <pagetemplate handle="editor_document"/>
             </pagetemplates>
-            <target handle="page_type" package="" path="/editors" pagetype="editor_document" form-factor="sitemap_in_page"/>
+            <target handle="page_type" package="" path="/editors" pagetype="editor_document"
+                    form-factor="sitemap_in_page"/>
             <composer>
                 <formlayout>
                     <set name="" description="">
@@ -647,7 +679,8 @@
                               user="admin" description="" package="">
                             <area name="Page Header">
                                 <blocks>
-                                    <block type="autonav" name="" custom-template="docs_breadcrumb.php" mc-block-id="j9Zw1b7D">
+                                    <block type="autonav" name="" custom-template="docs_breadcrumb.php"
+                                           mc-block-id="j9Zw1b7D">
                                         <data table="btNavigation">
                                             <record>
                                                 <orderBy><![CDATA[display_asc]]></orderBy>
