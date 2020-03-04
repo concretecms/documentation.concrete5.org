@@ -11,7 +11,8 @@
         "vlucas/phpdotenv": "^2.4",
         "aembler/addon_markdown": "^1.0",
         "concrete5/addon_concrete5_theme": "dev-master",
-        "illuminate/container": "5.2.*"
+        "illuminate/container": "5.2.*",
+        "concrete5/cloudflare_proxy": "^1.0"
     },
     "repositories": {
         "addon_markdown": {
