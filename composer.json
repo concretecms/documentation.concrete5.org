@@ -12,7 +12,8 @@
         "aembler/addon_markdown": "^1.0",
         "concrete5/addon_concrete5_theme": "^1.0",
         "illuminate/container": "5.2.*",
-        "concrete5/dependency-patches": "^1.5.0"
+        "concrete5/dependency-patches": "^1.5.0",
+        "concrete5/cloudflare_proxy": "^1.0"
     },
     "repositories": {
         "addon_markdown": {
