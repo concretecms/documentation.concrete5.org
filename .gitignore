@@ -62,3 +62,4 @@ packages/ec_recaptcha
 packages/markdown
 packages/concrete5_theme
 packages/migration_tool
+packages/cloudflare_proxy
