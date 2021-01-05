@@ -188,12 +188,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/addon_concrete5_theme.git",
-                "reference": "02ef0a4f84a1d6f78ab05e52ff315dad594f4cf7"
+                "reference": "b52a08d63076d38e579862560f9e1810fea70311"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/addon_concrete5_theme/zipball/02ef0a4f84a1d6f78ab05e52ff315dad594f4cf7",
-                "reference": "02ef0a4f84a1d6f78ab05e52ff315dad594f4cf7",
+                "url": "https://api.github.com/repos/concrete5/addon_concrete5_theme/zipball/b52a08d63076d38e579862560f9e1810fea70311",
+                "reference": "b52a08d63076d38e579862560f9e1810fea70311",
                 "shasum": ""
             },
             "require-dev": {
@@ -204,7 +204,7 @@
                 "source": "https://github.com/concrete5/addon_concrete5_theme/tree/master",
                 "issues": "https://github.com/concrete5/addon_concrete5_theme/issues"
             },
-            "time": "2021-01-05T14:29:21+00:00"
+            "time": "2021-01-05T14:45:34+00:00"
         },
         {
             "name": "concrete5/cloudflare_proxy",
